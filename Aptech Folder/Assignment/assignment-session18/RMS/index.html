@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Records Management System</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<section class="container">
+		<header>
+			<h1>Records Management System</h1>
+		</header>
+		<section class="main">
+			<article>
+				<h1>Records Management System</h1>
+				<p>Our App will help manage your records in an efficient and reliable manner</p>
+				<form>
+					<input type="text" id="txtName" placeholder="Fullname">
+					<input type="email" id="txtEmail" placeholder="Email Address">
+					<select id="txtCourse">
+						<option value="Course">Select course</option>
+						<option value="CCNA">CCNA</option>
+						<option value="Advanced Web">Advanced Web</option>
+						<option value="Graphics Design">Graphics Design</option>
+						<option value="ASP.net">ASP.net</option>
+						<option value="ADSE">ADSE</option>
+					</select>
+					<textarea id="txtAddress" placeholder="Residencial Address"></textarea>
+					<input type="submit" id="submitBtn" value="Add Record">
+					<button id="view_aRecord" >view a record</button>
+					<a href="redirect.html" onclick="">view all records</a>
+					<!-- <button id="view_allRecords">click to see all records</button> -->
+				</form>
+				
+			</article>
+			<aside>
+				<ul id="info">
+				</ul>
+			</aside>
+		</section>
+	</section>
+
+	<script src="js/rms.js"></script>
+</body>
+</html>

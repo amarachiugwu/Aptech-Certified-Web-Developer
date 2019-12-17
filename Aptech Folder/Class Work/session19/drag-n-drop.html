@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drag and Drop Operation</title>
+	<style type="text/css">
+		div{
+			width: 600px;
+			height: 300px;
+			background-color: #eee;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="msg" draggable="true" ondragstart="dragElement(event)">Implemennting Drag n Drop in HTML5</h1>
+	<div ondragover="allowDrop(event)" ondrop="dropElement(event)">
+		
+	</div>
+
+	<script type="text/javascript">
+		function dragElement(e) {
+			e.dataTransfer.setData('elementId', e.target.id);
+		}
+
+		function allowDrop(e) {
+			e.preventDefault();
+		}
+
+		function dropElement(e) {
+			var elementId = e.dataTransfer.getData('elementId');
+			e.target.appendChild(document.getElementById(elementId));
+		}
+	</script>
+</body>
+</html>

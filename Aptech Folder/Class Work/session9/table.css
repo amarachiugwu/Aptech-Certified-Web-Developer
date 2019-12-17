@@ -1,0 +1,44 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	width: 960px;
+	margin: 0 auto;
+}
+table{
+	border: 1px solid #eee;
+	border-collapse: collapse;
+	min-height: 150px;
+	width: 600px;
+}
+
+table caption{
+	background-color: purple;
+	color:#eee;
+	padding: 10px;
+	font-weight: bold;
+}
+table tr td, th{
+	border: 1px solid purple;
+	
+}
+table tr{
+	text-align: center;
+}
+
+table tr:nth-child(odd){
+	background-color: #ebf0f0;
+	color: #267777;
+
+}
+
+table tr:nth-child(even){
+	background-color:
+	color#267777; 
+}
+
+table tr:hover{
+	background-color: purple;
+	color: #eee;
+}
+

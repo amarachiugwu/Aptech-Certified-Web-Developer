@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>Building Mobile Website</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="image/jpg" href="obj.jpg">
+</head>
+<body>
+<section class="container">
+	<header>
+		<h1>
+			<a href="index.html">Building Mobile Website</a>
+		</h1>
+	</header>
+	<!-- Desktop navbar starts from here -->
+	<nav class="desk">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+	<!-- Desktop navbar ends here -->
+
+	<!-- Mobile navbar starts from here -->
+	<nav class="mobile">
+		<select onchange="gotoURL(this)">
+			<option value="index.html">Menu</option>
+			<option value="index.html">Home</option>
+			<option value="services.html">Services</option>
+			<option value="products.html">Products</option>
+			<option value="about.html">About Us</option>
+			<option value="contact.html">Contact Us</option>
+		</select>
+	</nav>
+	<!-- Mobile navbar ends here -->
+
+	<section class="main">
+		<article>
+			<!-- Background image from CSS -->
+		</article>
+		<aside>
+			<h1>Building Mobile Website</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</aside>
+	</section>
+
+	<section class="widget">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</section>
+
+	<footer class="call-now">
+		<a href="tel:080334785632">Call Us Now!</a>
+	</footer>
+
+	<footer class="generic">
+		<p>Aptech Computer Education &copy;2018 All Rights Reserved</p>
+	</footer>
+</section>
+
+
+
+<script type="text/javascript">
+	function gotoURL(selectElement) {
+		location.href = selectElement.value;
+	}
+</script>
+</body>
+</html>

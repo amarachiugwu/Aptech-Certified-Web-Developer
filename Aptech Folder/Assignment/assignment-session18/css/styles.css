@@ -1,0 +1,250 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+	src: url(../fonts/roboto-regular.ttf);
+	font-family: roboto;
+}
+
+@font-face{
+	src: url(../fonts/khand-regular.ttf);
+	font-family: khand;
+}
+
+@font-face{
+	src: url(../fonts/pacifico-regular.ttf);
+	font-family: pacifico;
+}
+
+@font-face{
+	src: url(../fonts/tajawal-regular.ttf);
+	font-family: tajawal;
+}
+
+@font-face{
+	src: url(../fonts/boogaloo-regular.ttf);
+	font-family: boogaloo;
+}
+.container{
+	width: 80%;
+	margin: auto;
+	min-height: 800px;
+}
+.container header{
+	width: 100%;
+	padding: 0 50px 0 0;
+	background-color: #000;
+	color: #fff;
+	height: auto;
+	font-family: pacifico;
+}
+.container header a img{
+	width: 80px;
+	height: 70px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.container header h1{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	font-size: 35px;
+}
+.container header i.fa{
+	.border: 2px solid #eee;
+	display: inline-block;
+	float: right;
+	font-size: 40px;
+	color: #B01B1D;
+	position: relative;
+	padding: 10px;
+	margin-top: 10px;
+}
+.container header i span{
+	color: #fff;
+	font-size: 20px;
+	font-family: boogaloo;
+}
+.container header i.fa div{
+	font-size: 20px;
+	padding: 0px 5px;
+	color: black;
+	min-width: 20px;
+	min-height: 20px;
+	background-color: #fff;
+	border-radius: 100%;
+	outline: none;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.container .slider{
+	width: 100%;
+	height: 450px;
+	background-color: #fff;
+	padding: auto;
+	margin: 20px 0;
+}
+.container .slider div{
+	height: 100%;
+	width: 44%;
+	.border: 2px solid blue;
+	float: left;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.container .slider div.slider1{
+	animation:  slideA 20s ease-in-out infinite;
+}
+.container .slider div.slider2{
+	width: 28%;
+	background-size: contain;
+	background-position: center;
+	animation:  slideB 20s ease-in-out infinite;
+}
+.container .slider div.slider3{
+	width: 28%;
+	animation:  slideC 20s ease-in-out infinite;
+}
+@keyframes slideA{
+	0%{background-image: url(../images/clock1.jpg);}
+	20%{background-image: url(../images/clock2.jpg);}
+	40%{background-image: url(../images/clock3.jpg);}
+	60%{background-image: url(../images/clock4.jpg);}
+	80%{background-image: url(../images/clock5.jpg);}
+	100%{background-image: url(../images/clock6.jpg);}
+}
+@keyframes slideB{
+	0%{background-image: url(../images/watch6.jpg);}
+	20%{background-image: url(../images/watch7.jpg);}
+	40%{background-image: url(../images/sp2.jpg);}
+	60%{background-image: url(../images/watch8.jpg);}
+	80%{background-image: url(../images/sp16.jpg);}
+	100%{background-image: url(../images/watch1.jpg);}
+}
+@keyframes slideC{
+	0%{background-image: url(../images/watch3.jpg);}
+	20%{background-image: url(../images/lad4.jpg);}
+	40%{background-image: url(../images/lad6.jpg);}
+	60%{background-image: url(../images/lad8.jpg);}
+	80%{background-image: url(../images/watch2.jpg);}
+	100%{background-image: url(../images/lad13.jpg);}
+}
+.container .main{
+	width: 100%;
+	margin: auto;
+	min-height: 775px;
+}
+.container .main div{
+	width: 32%;
+	float: left;
+	margin: 0.5%;
+	height: 250px;
+	background-color: #000;
+	cursor: pointer;
+	font-family: khand;
+}
+.container .main div .fa{
+	color: #B01B1D;
+	display: block;
+	text-align: center;
+	font-size: 150px;
+	margin-top: 30px;
+}
+.container .main div p{
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+}
+.container footer{
+	width: auto;
+	height: 100px;
+	background-color: #B01B1D;
+	color: white;
+	margin: 0  1.5% 0 0.5% ;
+	text-align: center;
+}
+.container footer span{
+	display: inline-block;
+	padding:  10px  20px 15px;
+}
+.container footer span a{
+	text-decoration: none;
+	color: white;
+	font-family: roboto;
+	font-size: 20px;
+}
+.container footer  p{
+	margin: 0;
+	font-size: 25px;
+	font-family: khand;
+}
+.container .items {
+	width: 100%;
+	min-height: 600px;
+	padding: 20px;
+}
+.container .items .itemCont{
+	width: 100%;
+	/*margin-bottom: 30px;*/
+	min-height: 440px;
+}
+.container .items h1{
+	text-align: center;
+	font-size: 35px;
+	margin: 0;
+}
+.container .items h2{
+	font-size: 25px;
+	text-align: center;
+}
+.container .items .image{
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+.container .items .details table{
+	width: 60%;
+	float: right;
+}
+.container .items .details table tr{
+	margin: 5px;
+}
+.container .items .details  table td{
+	padding: 20px;
+	font-size: 20px;
+	margin: 5px;
+	background-color: #eee;
+}
+.container .items .image button,.container .items .details button{
+	background-color: #B01B1D;
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-family: khand;
+	width: 120px;
+	font-size: 20px;
+	display: inline-block;
+}
+.container .items .details button{
+	text-align: center;
+	margin: 20px 10px 0 0;
+	float: right;
+}
+.container .items button.delete{
+	width: 150px;
+}
+.container .items .clock{
+	margin-bottom: 30px;
+}
+.container .items .image h3{
+	margin: 0;
+}

@@ -1,0 +1,528 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: tajawal;
+	background-color: #eee;
+}
+@font-face{
+src: url(../fonts/roboto-regular.ttf);
+	font-family: roboto;
+}
+
+@font-face{
+	src: url(../fonts/khand-regular.ttf);
+	font-family: khand;
+}
+
+@font-face{
+	src: url(../fonts/pacifico-regular.ttf);
+	font-family: pacifico;
+}
+
+@font-face{
+	src: url(../fonts/tajawal-regular.ttf);
+	font-family: tajawal;
+}
+
+@font-face{
+	src: url(../fonts/boogaloo-regular.ttf);
+	font-family: boogaloo;
+}
+.container{
+width: 100%;
+}
+.container header{
+	width: 100%;
+	height: 55px;
+	background-color: #333;
+	padding-right: 50px;
+	position: fixed;
+	z-index: 5;
+}
+.container header img{
+	float: left;
+	cursor: pointer;
+}
+.container header ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.container header ul li{
+	float: right;
+
+}
+.container header ul li a{
+	text-decoration: none;
+	color: #eee;
+	padding-right: 50px;
+	padding-top: 15px;
+	display: block;
+	font-family: roboto;
+	font-size: 16px;
+}
+.container header ul li span .fa{
+	padding-right: 10px;
+	font-size: 25px;
+	padding-top: 12px;
+	cursor: pointer;
+	color: #eee;
+}
+.container header ul li span .fa-gears{
+	font-size: 16px;
+	padding-top: 15px;
+}
+body .container .nav{
+	width: 220px;
+	height: 100%;
+	background-color: #00597A;
+	position: fixed;
+	padding-top: 100px;
+	top:0;
+	z-index: -1;
+}
+.container .nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.container .nav ul div{
+ width: 95%;
+ padding: 15px 0;
+ position: relative;
+ cursor: pointer;
+}
+.container .nav ul div li{
+ display: inline-block;
+}
+.container .nav ul div li a{
+	text-decoration: none;
+	color: #eee;
+	display: block;
+}
+.container .nav ul div .fa{
+	padding: 10px;
+	color: #eee;
+	font-size: 18px;
+	display: block;
+}
+.container .nav ul div .fa-angle-right{
+	position: absolute;
+	right: 5px;
+	top: 30px;
+	color: #eee;
+	font-size: 17px;
+	padding: 0;
+	display: block;
+}
+.container .p{
+	background-color: #109AB9;
+	position: relative;
+	margin-left: 220px;
+	height: 141px;
+}
+.container .p div{
+	position: absolute;
+	left: 5px;
+	top: 55px;
+	background-color: #57B5E3;
+	padding: 10px;
+}
+.container .p .fa{
+	color: #fff;
+}
+.container .p div p{
+	display: inline;
+	color: #fff;
+}
+.container .p p span{
+	color: #3B61A3;
+	cursor: pointer;
+	font-size: 15px;
+}
+.container .dashboard{
+	margin-left: 220px;
+	min-height: 1500px;
+	padding-top: 50px;
+	color: #777;
+	width: 1020px;
+}
+.container .dashboard .head{
+	height: 90px;
+	background-color: #eee;
+}
+.container .dashboard .head p.home{
+	background-color: #f3f3f3;
+	color: #777;
+	margin: 0;
+}
+.container .dashboard .head p.home .fa{
+	padding: 15px;
+	font-size: 20px;
+}
+.container .dashboard .head p.home span{
+	color: #2DC3E8;
+}
+.container .dashboard .head p.home span:hover{
+	text-decoration: underline;
+}
+.container .dashboard p.minmax{
+background-color: #fff;
+padding: 15px;
+margin: 0;
+}
+.container .dashboard div.widget-cont{
+	width: inherit;
+	height: 180px;
+}
+.container .dashboard .widget1{
+	margin:35px 0 35px 20px;
+	float: left;
+}
+.container .dashboard .widget1 .boxes{
+width: 320px;
+height: 105px;
+}
+.container .dashboard .widget1 .box{
+	width: 260px;
+	height: inherit;
+	border-radius: 5px;
+	background-color: #fff;
+	float: right;
+	padding: 5px 0 0 5px;
+
+}
+.container .dashboard .widget1 .sbox{
+	float: left;
+	width: 60px;
+	height: inherit;
+	background-color: #2DC3E8;
+	color: #fff;
+	font-size: 20px;
+	padding:5px 20px;
+}
+.container .dashboard .widget1 .sbox p{
+	font-size: 25px;
+	margin: 0;
+}
+.container .dashboard .widget1 .box .p1{
+	color: #FB6E52;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+}
+.container .dashboard .widget1 .box .p2{
+	margin: 0;
+}
+.container .dashboard .widget1 div.p3{
+width: auto;
+height:auto;
+text-align: right;
+padding-right: 10px;
+
+}
+.container .dashboard .widget1 .box p.p3{
+	display: inline-block;
+	font-size: 12px;
+	margin: 0;
+	padding: 4px 3px;
+	text-align: right;
+	background-color: #9CD584;
+	border-radius: 2px;
+	color: #fff;
+	text-align: right;
+}
+/*start of widget 2*/
+.container .dashboard .widget2{
+	margin:35px 0 35px 20px;
+	float: left;
+}
+.container .dashboard .widget2 .boxes{
+width: 320px;
+height: 105px;
+}
+.container .dashboard .widget2 .box{
+	width: 260px;
+	height: inherit;
+	border-radius: 5px;
+	background-color: #fff;
+	float: right;
+	padding: 5px 0 0 5px;
+
+}
+.container .dashboard .widget2 .sbox{
+	float: left;
+	width: 60px;
+	height: inherit;
+	background-color: #2DC3E8;
+	color: #fff;
+	font-size: 20px;
+	padding:5px 20px;
+}
+.container .dashboard .widget2 .sbox p{
+	font-size: 25px;
+	margin: 0;
+}
+.container .dashboard .widget2 .box .p1{
+	color: #FB6E52;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+}
+.container .dashboard .widget2 .box .p2{
+	margin: 0;
+}
+.container .dashboard .widget2 div.p3{
+width: auto;
+height:auto;
+text-align: right;
+padding-right: 10px;
+
+}
+.container .dashboard .widget2 .box p.p3{
+	display: inline-block;
+	font-size: 13px;
+	margin: 0;
+	padding: 5px 3px;
+	text-align: right;
+	background-color: #9CD584;
+	border-radius: 2px;
+	color: #fff;
+	text-align: right;
+}
+/*start of widget3*/
+.container .dashboard .widget3{
+	margin:35px 0 35px 20px;
+	float: left;
+	clear: right;
+}
+.container .dashboard .widget3 .boxes{
+width: 320px;
+height: 105px;
+}
+.container .dashboard .widget3 .box{
+	width: 260px;
+	height: inherit;
+	border-radius: 5px;
+	background-color: #fff;
+	float: right;
+	padding: 5px 0 0 5px;
+
+}
+.container .dashboard .widget3 .sbox{
+	float: left;
+	width: 60px;
+	height: inherit;
+	background-color: #2DC3E8;
+	color: #fff;
+	font-size: 20px;
+	padding:5px 20px;
+}
+.container .dashboard .widget3 .sbox p{
+	font-size: 25px;
+	margin: 0;
+}
+.container .dashboard .widget3 .box .p2{
+	margin: 0;
+}
+.container .dashboard .widget3 div.p3{
+width: auto;
+height:auto;
+text-align: left;
+padding-right: 10px;
+
+}
+.container .dashboard .widget3 .box p.p3{
+	display: inline-block;
+	font-size: 13px;
+	margin: 0;
+	padding: 2px 3px;
+	text-align: right;
+	background-color: #9CD584;
+	border-radius: 2px;
+	color: #fff;
+	text-align: left;
+}
+.dashboard .contact{
+	width: 320px;
+	box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.5);
+	color: #000;
+	background-color: #FBFBFB;
+	margin-left: 20px;
+	float: left;
+}
+.dashboard .contact .blue,.dashboard .compose .blue{
+	color: #2DC3E8;
+	margin: 0;
+	padding:5px 10px 0;
+}
+.dashboard .contact span:hover{
+	background-color: #F7F7F7;
+	cursor: pointer;
+}
+.dashboard .contact .blue .fa{
+	padding-right: 15px;
+}
+.dashboard .contact hr.blu,.dashboard .compose hr.blu{
+	border: 2px solid #2DC3E8;
+}
+.dashboard .contact  form{
+	width: auto;
+	height: auto;
+	margin: 10px;
+}
+.dashboard .contact .list{
+	padding-left: 30px;
+}
+.dashboard .contact .value{
+	display: inline-block;
+	float: right;
+}
+.dashboard .contact .two{
+	color: #2A6496;
+}
+.dashboard .contact button{
+	background-color: #981B48;
+	border: none;
+	width: 180px;
+	height: 30px;
+	color: #fff;
+	margin:  auto;
+	border-radius: 3px;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.dashboard .contact div.contact{
+	width: 94%;
+	margin:20px 3% 0 3%;
+	height: 350px;
+	position: relative;
+	box-shadow: none;
+	border: 1px solid #ccc;
+	margin-bottom: 50px;
+}
+.dashboard .contact div.contact hr.dred{
+	border: 2px solid #981B48;
+}
+.dashboard .contact div.contact button{
+	margin: auto;
+	position: absolute;
+	bottom: 30px;
+	left: 45px;
+	opacity: .8;
+}
+.container .compose{
+	width: 640px;
+	float: right;
+	margin-left: 20px;
+	height: auto;
+	background-color: #FBFBFB;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+.dashboard .compose form{
+	padding: 20px 0px 30px;
+}
+.dashboard .compose form input{
+margin-bottom: 15px;
+padding: 10px;
+}
+.dashboard .compose form select{
+padding: 10px;
+}
+.dashboard .compose form label{
+	text-align: right;
+	width: 120px;
+	display: inline-block;
+	color: #000;
+}
+.dashboard .compose form .alignT{
+	vertical-align: top;
+}
+.dashboard .compose form textarea#recipient{
+	width: 320px;
+	height: 100px;
+	padding: 10px;
+}
+.dashboard .compose form textarea#Message{
+	padding: 10px;
+	width: 320px;
+	height: 200px;
+	border: none;
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+}
+.dashboard .compose form .rblue{
+	color: #2DC3E8;
+}
+.dashboard .compose form p.rblue{
+	padding-left: 120px;
+	margin-top: 0;
+}
+.dashboard .compose form span.rblue{
+	padding-left: 25px;
+}
+.dashboard .compose form label.rblue{
+	width: 80%;
+	display: inline;
+	text-align: left;
+}
+.dashboard .compose form label.rblue2{
+	width: 80%;
+	display: inline-block;
+	margin-left: 120px;
+	text-align: left;
+	color: #2DC3E8;
+}
+.dashboard .compose form label.later{
+	width: auto;
+	padding-top: 20px;
+}
+.dashboard .compose form input.indent{
+ margin-left: 120px;
+}
+.dashboard .compose form .send{
+	background-color: #65B951;
+	width: 120px;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	margin:30px 20px 30px 120px;
+	color: #fff;
+}
+.dashboard .compose form .reset{
+	background-color: #F7F7F7;
+	width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	margin:30px 80px 30px 0px;
+	color: #777;
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+}
+.dashboard .compose form .draft{
+	background-color: #2DC3E8;
+	width: 120px;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	margin:30px 0px 30px 0px;
+	color: #fff;
+}
+div#lettersLeft{
+	margin-left: 120px;
+	color: #2DC3E8;
+	border: none;
+	height: 50px;
+}
+div .lettersLeft2{
+	margin-left: 120px;
+	color: #2DC3E8;
+	border: none;
+	height: 50px;
+}
+div#lettersLeft p{
+	color: #222;
+	display: inline;
+}

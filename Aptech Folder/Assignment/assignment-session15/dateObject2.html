@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Working with the date Object</title>
+</head>
+<body>
+<h1>Working with the date Object</h1>
+<script type="text/javascript">
+	var today = new Date();
+	var dayOfWeek = today.getDay();
+	var date = today.getDate();
+	var month = today.getMonth();
+	var year = today.getFullYear();
+	var suffix = ['st', 'nd', 'rd', 'th'];
+	var days = ['sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satuday'];
+	var months = ['Jenuary', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+	var fullDate;
+
+	switch(date){
+		case 31:
+		case 21:
+		case 1:
+		fullDate = alert('Todays date is \n ' + days[dayOfWeek] + ', ' + date + suffix[0]  + ' of' + ' ' +  months[month] + ', ' + year);
+		break;
+		case 22:
+		case 2:
+		fullDate = alert('Todays date is \n ' + days[dayOfWeek] + ', ' + date + suffix[1]  + ' of' + ' ' +  months[month] + ', ' + year);
+		break;
+		case 23:
+		case 3:
+		fullDate = alert('Todays date is \n ' + days[dayOfWeek] + ', ' + date + suffix[2]  + ' of' + ' ' +  months[month] + ', ' + year);
+		break;
+		default:
+		fullDate = alert('Todays date is \n ' + days[dayOfWeek] + ', ' + date + suffix[3]  + ' of' + ' ' +  months[month] + ', ' + year);
+	}
+</script>
+</body>
+</html>

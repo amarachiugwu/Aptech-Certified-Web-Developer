@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Working With Mouse and Focus Events</title>
+	<link rel="stylesheet" type="text/css" href="mousevents.css">
+</head>
+<body>
+<section class="container">
+	<header>
+		<h1>Working With Mouse and Focus Events</h1>
+	</header>
+	<section>
+		<form id="regForm">
+			<input type="text" name="" placeholder="*Fullname" onfocus="showStyle(this)" onblur="hideStyle(this)" autofocus="">
+			<input type="email" placeholder="*Email Address" name=""  onfocus="showStyle(this)" onblur="hideStyle(this)">
+			<input type="tel" placeholder="Telephone" name=""  onfocus="showStyle(this)" onblur="hideStyle(this)" >
+			<textarea placeholder="*Profile Description" name=""  onfocus="showStyle(this)" onblur="hideStyle(this)">
+				
+			</textarea>
+			<img src="images5/btn1.png" onmouseover="changeImage(this, 'images/btn2.png')" onmousedown="changeImage(this, 'images/btn3.png')" onmouseup="changeImage(this, 'images/btn1.png')" onclick="regForm.submit()" onmouseout="changeImage(this, 'images/btn1.png')">
+		</form>
+	</section>
+</section>
+<script>
+	function showStyle(inputElement) {
+		inputElement.style.border = "2px solid #3c76cc";
+		inputElement.style.backgroundColor = "#282923";
+				inputElement.style.color = "#eee";
+			}
+
+		function hideStyle(inputElement) {
+			inputElement.style.border = "none";
+			inputElement.style.backgroundColor = "#eee";
+			inputElement.style.color = "#282923";
+		}
+		
+		function changeImage(imgElement, srcValue) {
+			imgElement.src = srcValue;
+		}
+
+</script>
+</body>
+</html>

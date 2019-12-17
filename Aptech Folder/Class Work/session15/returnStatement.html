@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Return Statement</title>
+</head>
+<body>
+<h1>Return Statement</h1>
+<form>
+	<input type="number" id="txtNum" name="" placeholder="Please enter number">
+	<input type="submit" name="" id="btn" value="Find Factorial" onclick="calculate(event)">
+</form>
+<script type="text/javascript">
+	function calculate(e) {
+		e.preventDefault();
+		//select txtNum element
+		var txtNum = document.getElementById('txtNum');
+		//retrieve the user's input in txtNum
+		var num = txtNum.value;
+		var result = findFactorial(num);
+		alert(result);
+	}
+
+	function findFactorial(n) {
+		if(n == 0){
+			return 1;
+		}
+		if(n < 0){
+			return 'Please enter a positive number';
+		}
+		if(n > 50){
+			return 'Number is too large\nEnter a number from 1 to 50';
+		}
+		n = parseInt(n);
+		var product = 1;
+		for (var i = 1; i <= n; i++) {
+		 	var product = product * i; 
+		 } 
+		return product; 
+	}
+</script>
+</body>
+</html>

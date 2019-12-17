@@ -1,0 +1,447 @@
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+@font-face{
+	src:url(../fonts/roboto-regular.ttf);
+	font-family: roboto;
+}
+@font-face{
+	src:url(../fonts/khand-regular.ttf);
+	font-family: khand;
+}
+@font-face{
+	src:url(../fonts/pacifico-regular.ttf);
+	font-family: pacifico;
+}
+@font-face{
+	src:url(../fonts/tajawal-regular.ttf);
+	font-family: tajawal;
+}
+@font-face{
+	src:url(../fonts/boogaloo-regular.ttf);
+	font-family: boogaloo;
+}
+body{
+	width: 100%;
+	margin: 0;
+	font-family: roboto;
+}
+.top{
+	width: 100%;
+	height: 600px;
+	background-image: url(../images/banner1.jpg);
+	background-size: cover;
+}
+.top header{
+	width: 90%;
+	height: 70px;
+	margin: auto;
+	padding: 30px 0;
+}
+.top header .logo{
+	width: auto;
+	float: left;
+}
+.top header .logo a img{
+	width: 60px;
+}
+.top header nav{
+	float: right;
+	width: auto;
+	height: 80px;
+}
+.top header nav ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+} 
+.top header nav ul li{
+	float: left;
+}
+.top header nav ul li a{
+	text-decoration: none;
+	color: #eee;
+	display: block;
+	padding: 7px 17px;
+	font-size: 10px;
+	margin-right: 5px;
+	border-radius: 4px;
+	transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	
+}
+.top header nav ul li a.current{
+	border: 2px solid #fff;
+	border-radius: 4px;
+}
+.top .content{
+	width: 80%;
+	min-height: 150px;
+	margin: auto;
+	padding-top: 14px;
+}
+.top .content article{
+	width: 49%;
+	min-height:200px;
+	float: left;
+	padding-top: 80px;
+}
+.top .content article h1{
+	color: #fff;
+	font-size: 50px;
+}
+.top .content article p{
+	color: #bdbdbd;
+	font-family: tajawal;
+	word-spacing: 5px;
+	line-height: 30px;
+}
+.top .content aside{
+	float: right;
+	width: 50%;
+	padding-top: 90px;
+	min-height: 150px;
+}
+.top .content aside form{
+	background-color: #fff;
+	width: 100%;
+	min-height: 200px;
+	padding: 35px 20px;
+}
+.top .content aside form h4{
+	font-size: 15px;
+	margin: 0;
+	color: #adaeb2;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+.top .content aside form input{
+	width:100%;
+	height:35px;
+	border-radius:4px;
+	border: none;
+	margin-bottom: 7px;
+	padding: 5px 10px;
+	font-size: 15px;
+	background-color: #eee;
+}
+.top .content aside form input[type='submit']{
+	background-color: #eb2941;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #eee;
+}
+.container-fluid{
+	width: 100%;
+	min-height: 600px;
+}
+.container-fluid article{
+	width: 50%;
+	height: 600px;
+	float: left;
+	background-size: cover;
+	background-image: url(../images/1.jpg);
+}
+.container-fluid aside{
+	width: 50%;
+	height: 600px;
+	float: right;
+	padding: 15px 60px;
+}
+.container-fluid aside h6{
+	font-size: 10px;
+	color: #ea5153;
+}
+.container-fluid aside h1{
+	font-size: 30px;
+	margin-bottom: 35px;
+	color: 
+}
+.container-fluid aside p i.fa.fa-clock-o{
+	color: #6339f3;
+	font-size: 25px;
+}
+.container-fluid aside h5{
+	font-size: 15px;
+}
+.container-fluid aside hr{
+	color: #eee;
+}
+.container-fluid aside p i.fa.fa-users{
+	color: #6339f3;
+	font-size: 25px;
+}
+.container-fluid aside p{
+	font-size: 15px;
+	word-spacing: 7px;
+	line-height: 20px;
+}
+.outer-row{
+	width: 100%;
+	min-height: 1050px;
+	padding: 50px 0;
+	background-color: #f8f9fb;
+}
+.outer-row .container{
+	width: 960px;
+	min-height: 500px;
+	margin: auto; 
+	padding: 0 20px
+}
+.container .row1 .box{
+	float: left;
+	width: 50%;
+	height: 500px;
+	background-color: ghostwhite;
+	text-align: right;
+	padding: 0 30px 0 130px;
+}
+.container .row1 .box.bgimg{
+	background-image: url(../images/2.jpg);
+	background-size: cover;
+}
+.container .row2 .box{
+	float: left;
+	width: 50%;
+	height: 500px;
+	background-color: ghostwhite;
+	text-align: left;
+	padding: 20px 130px 0 30px;
+}
+.container .row2 .box.bgimg{
+	background-image: url(../images/3.jpg);
+	background-size: cover;
+}
+.container .row1 p{
+	word-spacing: 10px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.container .row1 h6{
+	color: #eb2941;
+	font-size: 10px;
+}
+.container .row1 h1{
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+.container .row1 span a{
+	display: inline-block;
+	padding: 7px 15px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid #eb2941; 
+	color: inherit;
+	font-size: 10px;
+}
+.container .row2 p{
+	word-spacing: 10px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.container .row2 h6{
+	color: #eb2941;
+	padding: 0;
+	font-size: 10px;
+}
+.container .row2 h1{
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+.container .row2 span a{
+	display: inline-block;
+	padding: 7px 15px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid #eb2941; 
+	color: inherit;
+	font-size: 10px;
+}
+.purple{
+	width: 100%;
+	min-height: 350px;
+	background-color: #6339f3;
+}
+.purple .container{
+	width: 960px;
+	min-height: 100%;
+	margin: auto;
+	color: #fff;
+	padding: 30px 0 30px 0;
+}
+.purple .container h6{
+	color: #eb2941;
+	font-size: 10px;
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+.purple .container h1{
+	text-align: center;
+}
+.purple .container .box{
+	width: 24%;
+	display: inline-block;
+	vertical-align: top;
+	min-height: 250px;
+	padding: 20px 30px;
+	text-align: center;
+}
+.purple .container .box h1{
+	font-size: 20px;
+	font-weight: lighter;
+}
+.purple .container .box p{
+	font-size: 13px;
+}
+.fixedbg{
+	width: 100%;
+	background-image: url(../images/banner.jpg);
+	height: 400px;
+	padding: 60px 0;
+	text-align: center;
+	background-size: cover;
+}
+.fixedbg .container{
+	width: 800px;
+	margin: auto;
+	min-height: 400px;
+}
+.fixedbg .container h6{
+	color: #eb2941;
+	font-size: 10px;	
+}
+.fixedbg .container h1{
+	color: #282923;
+}
+.fixedbg .container p{
+	word-spacing: 5px;
+	line-height: 15px;
+	font-size: 10px;
+	color: #A2A4B0;
+}
+.fixedbg .container span a{
+	display: inline-block;
+	padding: 7px 12px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid #eb2941; 
+	color: inherit;
+	margin-top: 20px;
+	font-size: 10px;	
+}
+.fixedbg .container span a:hover{
+	color: #eee;
+	background-color: #eb2941;
+}
+
+/*Style rules for search modal box*/
+#searchModal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 600px;
+	opacity: 0;
+	z-index: -9999;
+	transition: opacity 1s;
+	background-color: rgba(000, 000, 000,0.9);
+}
+
+#searchModal.show{
+	opacity: 1;
+	z-index: 99;
+}
+
+#searchModal.hide{
+	opacity: 0;
+	z-index: -99;
+}
+
+#searchModal p{
+	margin-left: 95%;
+}
+
+#searchModal i.fa.fa-close{
+	color: #eee;
+	font-size: 20px;
+}
+
+#searchModal i.fa.fa-close:hover{
+	cursor: pointer;
+	color: red;
+}
+
+#searchModal form{
+	width: 30%;
+	height: 200px; 
+	margin: 150px auto;
+}
+
+#searchModal form input{
+	width: 100%;
+	height: 50px;
+	font-size: 30px;
+	color: #eee;
+	font-family: khand;
+	outline: none;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #eee;
+	border-radius: 3px;
+	padding: 7px 5px;
+}
+
+#searchModal1{
+	position: fixed;
+	/*position: relative;*/
+	top: 60px;
+	left: 75%;
+	width: 25%;
+	height: 50px;
+	border-radius: 5px;
+	opacity: 0;
+	z-index: -9999;
+	transition: opacity 1s;
+	background-color: rgba(000, 000, 000,0.5);
+}
+
+#searchModal1.show{
+	opacity: 1;
+	z-index: 99;
+}
+
+#searchModal1.hide{
+	opacity: 0;
+	z-index: -99;
+}
+
+#searchModal1 form{
+	width: 100%;
+	height: 50px; 
+}
+
+#searchModal1 form input{
+	width: 100%;
+	height: 50px;
+	font-size: 30px;
+	color: #eee;
+	font-family: tajawal;
+	outline: none;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #eee;
+	border-radius: 3px;
+	padding: 7px 5px;
+}
+/*Add an icon such that if the user clicks on it, the class .show is removed.
+and modify the code in such a way that if the user hovers over the search btn,
+ a form is opened right underneath the button*/
+/*Search Modal style rule ends here*/

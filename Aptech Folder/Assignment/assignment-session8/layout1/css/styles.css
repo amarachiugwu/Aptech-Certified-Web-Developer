@@ -1,0 +1,153 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	margin: 0;
+	background-color: #eee;
+}
+
+.container{
+	width: 60%;
+	background-color: white;
+	margin: 0 auto;
+	min-height: 500px;
+}
+
+.container .header{
+	width: 100%;
+	min-height: 50px;
+	background-color: #c3c3c3;
+	padding: 20px 8.5%;
+}
+
+.container .header .logo{
+	display: inline-block;
+	font-size: 20px;
+}
+
+.container .header .nav{
+	height: 50px;
+	float: right;
+}
+
+.container .header .nav ul, .container .footer ul{
+	list-style-type: none;
+}
+
+.container .header .nav ul li{
+	float: right;
+	padding-left: 25px;
+}
+
+.container .header .nav ul li a, .container .footer ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.container  .intro-and-slider-cont{
+	min-height: 100px;
+	width: 100%;
+	background-color: #c3c3c3;
+	padding: 20px  8.5%
+}
+.container  .intro{
+	width: 35%;
+	padding: 0px 5% 0px 0;
+	float: left;
+	height: 200px;
+}
+
+.container .slider{
+	width: 65%;
+	height: 200px;
+	background-color: #9f9f9f;
+	float: left;	
+	font-size: 20px;
+	padding: 50px ;
+}
+
+.container .main{
+	width: 100%;
+	background-color: #fff;
+    min-height: 300px;
+}
+
+.container .main .small-circle-cont{
+	height: 50px;
+	background-color: white;
+	padding:10px  215px 0 0;
+}
+
+.container .main .small-circle-cont .small-circle{
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: #c3c3c3;
+	float: right;
+	margin: 10px;
+}
+
+.container .main .equal-box-cont{
+	width: 90%;
+	margin: 0 auto;
+	background-color: red;
+	padding:0 0 0 2.5%;
+}
+
+.container .main .equal-box-cont .equal-box{
+	width: 30%;
+	height: 200px;
+	margin: 0 1.5% 20px 0 ;
+	background-color: #c3c3c3;
+	display: inline-block;
+	text-align: center;
+	padding-top: 85px;
+	font-size: 18px;
+}
+
+.container .main .twitter-feed{
+	width: 85%;
+	height: 50px;
+	background-color: #c3c3c3;
+	margin: 0px auto;
+	padding: 15px 20px;
+	font-size: 18px;
+}
+
+.container .footer {
+	width: 100%;
+	height: 50px;
+	background-color: #c3c3c3;
+	margin-top: 20px;
+}
+
+
+.container .footer .nav {
+width: 50%;
+padding: 0;
+margin: 0;
+display: inline-block;
+
+}
+.container .footer .nav ul li{
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.container .footer .copyright-info{
+	float: right;
+	font-size: 18px;
+	padding: 15px 5%;
+}
+
+/*style for responsive slider starts here*/
+.container .header .iframe{
+	width: 65%;
+	height: 200px;
+	background-color: #9f9f9f;
+	float: left;	
+}
+
+

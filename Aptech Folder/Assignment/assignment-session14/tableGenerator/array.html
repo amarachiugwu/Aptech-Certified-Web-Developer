@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TB Generator</title>
+</head>
+<body>
+   
+    
+
+    <script type="text/javascript">
+      //I want to write a code that ask a user to input the number of rows and columns he/she want then my code will go further to ask what they want to be at diffrent location of the rows and columns
+
+      //the first thing i did was to get these values from the user through a prompt and storing them in input1 and input2 respectively below
+      	var input1 = parseInt(prompt("Please enter the number of row(s) you want"));
+    	  var input2 = parseInt(prompt("Please enter the number of column(s) you want"));
+    	
+      //when i got that I created a multidimentional array row bello without specifing the number of element it will have yet to be determined in subsequent for loop bellow
+    	 var row = [];
+
+       //this for loop takes its condition to be the lenght of the input1 being the number of rows added by the user so when ever the value of i is less than input1 enter this code again and exexute the next possible value for example the user choose 2rows this will loop two times for subscript 0 and 1
+          for (var i = 0; i < input1; i++) {
+              row[i] = [];
+      //this for loop takes its condition to be the lenght of the input2 being the number of columns added by the user so when ever the value of j is less than input2 enter this code again and exexute the next possible value for example the user choose 3columns this will loop three times for subscript 0, 1 and 2 but in the case of row[i][j] means fro every i lets assume it's 0 subscript the below code will prompt for [0][0] [0][1] [0][2] and this goes again for [1][0] [1][1] [1][2] and you have your 2 by 3 table
+          	     for (var j = 0; j < input2 ; j++) {
+          	       row[i][j] = prompt("Please enter value for row "+ i +" coloumn " + j);
+
+          	     }
+          }
+      //then its time to write our table in our document
+    	  document.write("<table border='2' width='50' height='30'>");
+
+      //hear row.lenght is the lenght of the rows
+              for (var i = 0; i < row.length; i++) {
+
+    	        document.write("<tr>");
+      //hear row[i].lenght is the number of columns and pointing at element i in row main array
+              	     for (var j = 0; j < row[i].length; j++) {
+    	            document.write("<td>");
+                         document.write(row[i][j]) ;
+    	           document.write("<td>");
+              	      	  
+              	     }
+    	       document.write("</tr>");
+              }
+
+    	  document.write("</table>");
+
+    </script>
+</body>
+</html>

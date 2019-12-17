@@ -1,0 +1,23 @@
+
+
+
+a:link{
+	color:maroon;
+}
+a:visited{
+	color: purple;
+}
+a:hover{
+	color: red
+}
+a:active{
+	background-color: skyblue;
+	text-decoration: none;
+	color: maroon;
+	padding:10px;
+}
+h1:first-letter{
+	font-size: 20px;
+	background-color: black;
+	color: white;
+}

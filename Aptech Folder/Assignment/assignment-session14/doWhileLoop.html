@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<section class="container">
+	<h1>Capital of united state is?</h1>
+</section>
+<script type="text/javascript">
+	var  answer = " ";
+	var i = 0;
+	do{
+		answer = prompt("Capital of United States? ");
+		answer = answer.toLowerCase();	
+		i <= 3;
+		i++;
+		if(answer == ""){
+			alert("Please Enter the capital of united states");
+		}
+
+		
+		if(i == 1){
+			alert("You have only two chance of input left\nchoose wisely \nBest of lucks with it");
+		}
+		if(i == 2){
+			alert("You have your last chance of input left \nchoose wisely \nBest of lucks with it");
+		}
+		if(i == 3){
+			alert("You have your exhausted your slot \nSorry try again ");
+			break
+		}
+	}
+	while(answer  !== "washinton"){
+
+	}
+</script>
+</body>
+</html>

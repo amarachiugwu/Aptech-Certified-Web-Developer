@@ -1,0 +1,102 @@
+*{
+	box-sizing: border-box;
+	/*Mozilla Firefox*/
+	-moz-box-sizing:border-box;
+	/* Google Chrome and Safari*/
+	-webkit-box-sizing: border-box;
+	/*Opera*/
+	-o-box-sizing:border-box;
+	/*Internet Explora*/
+	-ms-box-sizing:border-box;
+}
+
+body{
+	margin:0;
+	background-color: #eee;
+	width: 100%;
+}
+
+.container{
+	width: 960px;
+	min-height: 500px;
+	background-color: #fff;
+	margin: 0 auto;
+	font-family: cursive;
+}
+
+.container header{
+	width: 100%;
+	height: 100px;
+	background-color: #282923;
+	text-align: center;
+}
+
+.container header h1{
+	margin:0;
+	padding: 20px 0;
+}
+
+.container header h1 a{
+	text-decoration: none;
+	color: #eee;
+	font-size: 35px;
+}
+
+.container nav{
+	width: 100%;
+	height: 50px;
+	background-color: maroon;
+}
+
+.container nav ul{
+	margin:0;
+	padding:0; 
+}
+
+.container nav ul li{
+	list-style-type: none;
+	float: left;
+}
+
+.container nav ul li a{
+	display: block;
+	padding: 10px 15px;
+	color: #eee;
+	text-decoration: none;
+}
+
+.container nav ul li a:hover{
+	background-color: #282923;
+}
+
+.container .main{
+	width: 100%;
+	min-height: 400px;
+}
+
+.container .main article{
+	width: 65%;
+	background-color: powderblue;
+	min-height: 400px;
+	padding: 10px 30px;
+	float: left;
+}
+
+.container .main aside{
+	width: 35%;
+	background-color: #ddd;
+	min-height: 400px;
+	padding: 10px 30px;
+	float: right;
+}
+
+.container footer{
+	background-color: #282923;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+}
+.container footer p{
+	margin: 0;
+	padding: 10px 0;
+}

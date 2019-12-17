@@ -1,0 +1,181 @@
+*{
+	box-sizing: border-box;
+}
+
+@font-face{
+	src:url(../fonts/roboto-regular.ttf);
+	font-family: roboto;
+}
+@font-face{
+	src:url(../fonts/khand-regular.ttf);
+	font-family: khand;
+}
+@font-face{
+	src:url(../fonts/pacifico-regular.ttf);
+	font-family: pacifico;
+}
+@font-face{
+	src:url(../fonts/tajawal-regular.ttf);
+	font-family: tajawal;
+}
+@font-face{
+	src:url(../fonts/boogaloo-regular.ttf);
+	font-family: boogaloo;
+}
+
+body{
+	width: 100%;
+	margin: 0;
+	font-family: roboto;
+	background-color: #eee;
+}
+
+.container{
+	width: 1000px;
+	min-height: 600px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+.container header{
+	width: 100%;
+	height: 100px;
+	background-color: powderblue;
+	padding: 5px 0;
+	font-size: 20px;
+	text-align: center;
+}
+
+.container ul.slider{
+	width: 100%;
+	height: 500px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
+	background-color: #282923;
+}
+
+.container ul.slider li.slide .content i.fa.fa-chevron-left{
+	font-size: 30px;
+	margin-top: 18%;
+	opacity: 1;
+	float: left;
+}
+
+.container ul.slider li.slide  .content i.fa.fa-chevron-right{
+	font-size: 30px;
+	margin-top: 18%;
+	float: right;
+}
+
+.container ul.slider li.slide .content i.fa.fa-chevron-left:hover{
+	background-color: #eee;
+	color: #000;
+	cursor: pointer;
+}
+
+.container ul.slider li.slide .content i.fa.fa-chevron-right:hover{
+	background-color: #eee;
+	color: #000;
+	cursor: pointer;
+}
+
+.container ul.slider li.slide{
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -999;
+	position: absolute;
+	transition: opacity 1s;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.container ul.slider li.slide.show{
+	opacity: 1;
+	z-index: 999;
+}
+
+.container ul.slider li.slide:nth-child(1){
+	background-image: url(../images/img1.jpg);
+}
+
+.container ul.slider li.slide:nth-child(2){
+	background-image: url(../images/img2.jpg);
+}
+
+.container ul.slider li.slide:nth-child(3){
+	background-image: url(../images/img3.jpg);
+}
+
+.container ul.slider li.slide:nth-child(4){
+	background-image: url(../images/img4.jpg);
+}
+
+.container ul.slider li.slide .content{
+	width: 100%;
+	height: 100%;
+	color: #eee;
+	padding-top: 80px;
+	background-color:rgba(000, 000, 000, 0.6);
+}
+
+.container ul.slider li.slide .content article{
+	width: 50%;
+	min-height: 200px;
+	padding: 20px 60px;
+	float: left;
+}
+
+.container ul.slider li.slide .content aside{
+	width: 45%;
+	min-height: 200px;
+	float: right;
+	float: left;
+	.margin: 0 20px 0 0;
+	padding: 20px 100px 20px 0;
+}
+
+.container ul.slider li.slide .content aside form{
+	width: 100%;
+	min-height: 250px;
+	background-color: #eee;
+	padding: 20px 30px;
+	border-radius: 5px; 
+}
+
+.container ul.slider li.slide .content aside form h1{
+	font-family: khand;
+	font-size: 25px;
+}
+
+.container ul.slider li.slide .content aside form input{
+	width: 100%;
+	height: 45px;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+
+.container ul.slider li.slide .content aside form input[type="submit"]{
+	background-color: #eb2941;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #eee;
+}
+
+.container ul.slider li.slide .content a{
+	color: #eee;
+	padding: 10px;
+}
+
+.container ul.slider li.slide .content a:hover{
+	text-decoration: none;
+}
+/*On mouseover, pause currentSlide and add controls at the edges*/

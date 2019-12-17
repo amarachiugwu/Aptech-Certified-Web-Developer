@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using Template Method to Create Custom Object</title>
+</head>
+<body>
+<h1>Using Template Method to Create Custom Object</h1>
+
+
+<script type="text/javascript">
+	function Student(fname, lname, studentId, course) {
+		this.firstname = fname || "Unknown name!";
+		this.lastname = lname || "Unknown";
+		this.studentId = studentId || "Student ID unknown";
+		this.course = course || "Course Unknown";
+
+		this.displayDetails = function() {
+			alert("Student's Details are\nName: " + this.firstname + "\nStudent ID: " + this.studentId + "\nCourse: " + this.course);
+		}
+		
+	}
+
+	var mary = new Student("Mary", "Stuart", "Student1014785", "CCNA");
+
+	mary.displayDetails();
+
+	var amara = new Student("Amarachi", "Ugwu", "Student1014785", "ADv Web");
+
+	amara.displayDetails();
+</script>
+</body>
+</html>

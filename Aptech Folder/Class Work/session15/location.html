@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Location Object</title>
+</head>
+<body>
+<h1>Location Object</h1>
+<button id="btn">Go to another page</button>
+
+<script>
+	var btn = document.getElementById('btn');
+	btn.addEventListener('click', gotoAnotherPage);
+	function gotoAnotherPage() {
+		var response = confirm('This action will redirect you to another page.\n\nDo you still want to continue');
+		if (response == true) {
+			location.href = 'project1/index.html';
+		}
+		else{
+			alert('You are still in the current page');
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expression</title>
+</head>
+<body>
+<h1>Regular Expression</h1>
+<script type="text/javascript">
+var zipcodepattern = /^9\d{3}7$/;
+	var zipCode = prompt("please enter your five digit code.....");
+	if(zipcodepattern.exec(zipCode) != null){
+		alert("Yes you have enterred a valid code");
+	}
+	else{
+		alert("Invalid code entered");
+	}
+</script>
+</body>
+</html>

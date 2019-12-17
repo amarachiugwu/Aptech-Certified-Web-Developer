@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>My Shoping Cart</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+<section class="container">
+	<header>
+		<h1>My Shoping Cart</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">My Account</a></li>
+			<li><a href="#">My Account</a></li>
+			<li><a href="checkout.html">Checkout</a></li>
+		</ul>
+			<span class="basket">
+				<i class="fa fa-cart-arrow-down"></i>
+				<span id="items"></span>
+			</span>
+	</nav>
+	<section>
+		<article class="product">
+			<div class="image">
+					<img src="images/img1.jpg">
+			</div>
+			<h2><a href="product-desk.html" onclick="openDescription('images/img1.jpg')">iphone 6</a></h2>
+			<h3>&#8358;90,000</h3>
+			<span class="btn" data-id="001" data-name="iphone 6" data-price="90,000" onclick="addtoCart(this)">Add to cart</span>
+		</article>
+		
+		<article class="product">
+			<div class="image">
+					<img src="images/img2.jpg">
+			</div>
+			<h2><a href="product-desk.html" onclick="openDescription('images/img2.jpg')" >Amethyst Ring</a></h2>
+			<h3>&#8358;250,000</h3>
+			<span class="btn" data-id="002" data-name="Amethyst Ring" data-price="250,000" onclick="addtoCart(this)">Add to cart</span>
+		</article>
+
+		<article class="product">
+			<div class="image">
+					<img src="images/img3.jpg">
+			</div>
+			<h2><a href="product-desk.html" onclick="openDescription('images/img3.jpg')">Diamond pendant</a></h2>
+			<h3>&#8358;120,000</h3>
+			<span class="btn" data-id="003" data-name="Diamond pendant" data-price="120,000" onclick="addtoCart(this)">Add to cart</span>
+		</article>
+
+		<article class="product">
+			<div class="image">
+					<img src="images/img4.jpg">
+			</div>
+			<h2><a href="product-desk.html" onclick="openDescription('images/img4.jpg')">iphone 6x</a></h2>
+			<h3>&#8358;100,000</h3>
+			<span class="btn" data-id="004" data-name="iphone 6x" data-price="100,000" onclick="addtoCart(this)">Add to cart</span>
+		</article>
+
+		<article class="product">
+			<div class="image">
+					<img src="images/img5.jpg">
+			</div>
+			<h2><a href="product-desk.html" onclick="openDescription('images/img5.jpg')">Jewellery</a></h2>
+			<h3>&#8358;350,000</h3>
+			<span class="btn" data-id="005" data-name="Jewellery" data-price="350,000" onclick="addtoCart(this)">Add to cart</span>
+		</article>
+
+		<article class="product">
+			<div class="image">
+					<img src="images/img6.jpg">
+			</div>
+			<h2><a href="product-desk.html" onclick="openDescription('images/img6.jpg')">Emerald</a></h2>
+			<h3>&#8358;450,000</h3>
+			<span class="btn" data-id="006" data-name="Emerald" data-price="450,000" onclick="addtoCart(this)">Add to cart</span>
+		</article>
+	</section>
+</section>
+
+<script src="js/shopping-cart.js"></script>
+</body>
+</html>

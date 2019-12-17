@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checking Web Storage Support</title>
+</head>
+<body>
+	<h1>Checking Web Storage Support</h1>
+	<script type="text/javascript">
+		
+		checkSupport();
+		     function checkSupport()     {       
+		     	if (("sessionStorage" in window) && window["sessionStorage"] !== null) {           alert("Your browser supports Web Storage");           
+		     		return;        
+		     	}       
+		     	alert("Your browser does not support Web Storage"); 
+		     }
+	</script>
+</body>
+</html>

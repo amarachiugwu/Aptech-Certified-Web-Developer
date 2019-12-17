@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Implementing IndexedDB API</title>
+</head>
+<body>
+	<h1>Implementing IndexedDB API</h1>
+	<button onclick="addRecord()">Add Record</button>
+	<ul id="info"></ul>
+
+	<script type="text/javascript">
+		var info = document.getElementById('info');
+		var db;
+		var transaction;
+		var indexedDB = window.indexedDB || window.mozindexedDB || window.webkitindexedDB || window.msindexedDB;
+		
+		var openRequest = indexedDB.open('aptech-web-nov', 5 );
+
+		openRequest.onerror = function (e) {
+			info.innerHTML += '<li> Sorry, something went wrong! DB could not be initialized. ' + e.target.errorCode + '</li>'
+		}
+
+		openRequest.onsuccess = function (e) {
+			db = e.target.result;
+			info.innerHTML += '<li>Database initialized Successfully!</li>';
+		}
+
+		openRequest.onupgradeneeded = function (e) {
+			var db = e.target.result;
+			if (db.objectStoreNames.contains('students')) {
+				db.deleteObjectStore('students');
+				info.innerHTML += '<li>ObjectStore Deleted succesfully! </li>';
+			}
+
+			db.createObjectStore('students', {keypath : 'id', autoIncrement : true});
+			info.innerHTML += '<li>New Object Store created sucessfully! </li>';
+		}
+
+
+		function addRecord() {
+			var name = prompt('Please enter your full name');
+			var course = prompt('Please enter course of study');
+			var campus = prompt('Please enter campus');
+
+			var record = {
+				name : name,
+				course : course,
+				campus : campus
+			}
+
+			transaction = db.transaction(['students'], 'readwrite');
+			var objectStore = transaction.objectStore('students');
+			var addRequest = objectStore.add(record);
+
+			addRequest.onerror = function (e) {
+				info.innerHTML += '<li>Sorry record could not be added! Please try again</li>';
+			}
+
+			addRequest.onsuccess = function (e) {
+				info.innerHTML += '<li>Record added successfully</li>';
+			}
+
+		}
+
+	</script>
+</body>
+</html>

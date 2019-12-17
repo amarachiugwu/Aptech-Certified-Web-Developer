@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>On Mouse Event</title>
+	<style type="text/css">
+		.redZone{
+			width: 500px;
+			height: 500px;
+			padding: 20px;
+			background-color: red;
+			text-align: center;
+			color: #eee;
+		}
+	</style>
+</head>
+<body>
+<button onmouseup="sayHi()">On Mouse Event</button>
+<div class="redZone" onmouseover="warnUser()">
+	<h1>Restricted Area No Entrance!</h1>
+</div>
+<script>
+	function sayHi() {
+		alert("Hi");
+	}
+	function warnUser() {
+		alert("Opps! Restricted area, Please this is your last warning");
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #999;
+	margin: 15px 0 0 0;
+	font-family: tahoma;
+}
+
+section{
+	width: 1157px;
+	height: 100%;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+section div{
+	width: 1127px;
+	height: 100%;
+	background-color: #2e2b72;
+	margin: 0 auto;
+	padding-bottom: 5px;
+}
+table{
+	width: 1113px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 3px;
+	border-collapse: collapse;
+}
+
+table caption{
+	width: 100%;
+	margin: 0 auto;
+}
+
+table tr{
+	background-color: #fff;
+	border-bottom: 1px solid black;
+} 
+
+table tr:hover td{
+	background-color: #;
+	color: red;
+}
+
+/*the elements with .pink-bgd class are the elements that fell into the below
+ listed nth-childs due to colspan, therefore :not(.pink-bgd) exempts them from the 
+ styling below, while the element with class .pink are those that are meant to take up the 
+ styleing but didnt due to colspan shifted them to another nth-child value */
+
+table tr td:nth-child(4), table tr td:nth-child(5),
+table tr td:nth-child(6):not(.pink-bgd),
+table tr td:nth-child(7):not(.pink-bgd),table tr td:nth-child(8):not(.pink-bgd),
+table tr td:nth-child(9):not(.pink-bgd), table .pink{
+background-color: #fad2c8;
+text-align: center;
+width: 30px;
+}
+
+/*the elements with .pink-bgd class are the elements that fell into the below
+ listed nth-childs due to colspan, therefore :not(.blue-bgd) exempts them from the 
+ styling below, while the element with class .blue are those that are meant to take up the 
+ styleing but didnt due to colspan shifted them to another nth-child value */
+table tr td:nth-child(10):not(.blue-bgd), table tr td:nth-child(11):not(.blue-bgd),
+table tr td:nth-child(12):not(.blue-bgd),
+table tr td:nth-child(13):not(.blue-bgd),table tr td:nth-child(14),table tr td:nth-child(15),
+ table .blue, table tr td:nth-child(19):not(.blue-bgd), table tr td:nth-child(21):not(.blue-bgd),
+  table tr td:nth-child(23):not(.blue-bgd), table .blue{
+background-color: #BAC9DE;
+text-align: center;
+width: 30px;
+}
+table tr td:nth-child(19):not(.blue-bgd){
+	width: 70px;
+}
+
+/*.blue are those that are meant to take up the styleing but didnt due to 
+colspan shifted them to another nth-child value */
+table tr td:nth-child(25), table tr td:nth-child(26), .yellow{
+	background-color:#fefedc;
+	text-align: right;
+}
+
+/*.center are those that are meant to take up the styleing but didnt due to 
+colspan shifted them to another nth-child value */
+table tr td:nth-child(16), table tr td:nth-child(17), table tr td:nth-child(18), 
+table tr td:nth-child(20), table tr td:nth-child(22), table tr td:nth-child(24), table .center{
+	text-align: center;
+}
+
+/*the elements with .pink-bgd class are the elements that fell into the below
+ listed nth-childs due to colspan, therefore :not(.not-bold) exempts them from the 
+ styling below, while the element with class .bold are those that are meant to take up the 
+ styleing but didnt due to colspan shifted them to another nth-child value */
+table tr td:nth-child(17):not(.not-bold), table tr td:nth-child(26), table .bold{
+	font-weight: bold;
+} 
+
+/*.red are those that are meant to take up the styleing but didnt due to 
+colspan shifted them to another nth-child value */
+table tr td:nth-child(17):not(.not-bold), table .red{
+	background-color: #D2303B;
+	color: #fff;
+}

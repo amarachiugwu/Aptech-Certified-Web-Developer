@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multi Dimentional Array</title>
+</head>
+<body>
+<h1>Multi Dimentional Array</h1>
+
+<script>
+	// Declare main array
+	var students = [];
+	students[0] = ["1", "James", "web", "75"];
+	students[1] = ["2", "Ruth", "CCNA", "65"];
+	students[2] = ["3", "Frank", "Graphics", "70"];
+
+// Another way to write the above
+	// var students = [["1", "James", "web", "75"],
+	// 				["2", "Ruth", "CCNA", "65"],
+	// 				["3", "Frank", "Graphics", "70"]];
+
+	// alert("the second element in the first sub array is " + students[0][1]);
+
+	document.write("<h1>Students Result Sheet</h1>");
+	document.write('<table border = "1">');
+	document.write("<tr>");
+	document.write("<th>S/N</th><th>Name</th><th>Course</th><th>score</th>");
+	document.write("</tr>");
+	for (var i = 0; i < students.length; i++) {
+		document.write("<tr>");
+		for (var k = 0; k < students[i].length; k++) {
+			document.write("<td>" + students[i][k] + "</td>");
+		}
+		document.write("</tr>");
+
+
+	}
+	document.write("</table>");
+</script>
+</body>
+</html>

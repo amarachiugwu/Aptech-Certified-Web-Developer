@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email/ Phone No/ Url Extractor</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<section class="container">
+	<header>
+		<h1>EPU Extracting App</h1>
+	</header>
+	<section class="main">
+		<article>
+			<h1>THE REAL EXTRACTING APP</h1>
+			<p>EPU Extracting App can help you to extract email address(es),Phone Number(s) and Url(s) from a bunch of strings. Just copy the string and paste in the space provided below then click on Extract Email(s) or Extract Phone No(s) or Extract Url(s).</p>
+			<form>
+				<textarea id="txtStrings"></textarea>
+				<!-- <input type="submit" id="extractBtn" value="Extract Emails" onclick="extractEmails(event)"> -->
+				
+				<div class="btn">
+					<button id="extractBtn" onclick="extract(event)">Extract Email(s)</button>
+				    <button id="extractBtn2" onclick="extract2(event)">Extract Phone No(s)</button>
+					<button id="extractBtn3" onclick="extract3(event)">Extract Url(s)</button>
+				</div>
+				<div id="numStrings"></div>
+				<textarea id="result"></textarea>
+			</form>
+		</article>
+		<aside>
+			
+			<!-- <p id="numStrings2"></p>
+			<p id="numStrings3"></p> -->
+		</aside>
+	</section>
+</section>
+<script src="custom.js"></script>
+</body>
+</html>

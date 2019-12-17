@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1440 600" enable-background="new 0 0 1440 600" xml:space="preserve">
+	 
+<defs>
+  <marker id="markerCircle"  markerWidth="16" markerHeight="16" refX="8" refY="8" orient="auto">
+         <circle cx="8" cy="8" r="4" fill="#FFFFFF"/>
+  </marker>
+  
+  <marker id="Marker2"  markerWidth="35" markerHeight="35" refX="17.5" refY="17.5" orient="auto">
+	  <g id="Marker_2">
+		<circle fill="#FFFFFF" cx="17.6" cy="17.4" r="11.4"/>
+		<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="17.6" cy="17.4" r="15.9"/>
+	</g>
+	</marker>
+	<marker id="Marker3" markerWidth="45" markerHeight="45" refX="22.5" refY="22.5" orient="auto">
+	<g id="Marker_3">
+		<circle fill="#FFFFFF" cx="17.6" cy="17.4" r="8.9"/>
+		<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="17.6" cy="17.4" r="11.4"/>
+		<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="17.6" cy="17.4" r="16.6"/>
+	</g>
+	</marker>
+</defs>
+
+	 
+<polygon fill="none" stroke-width="1" style="marker-start: url(#Marker2);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="3s" id="Marker1Animation1" begin="0s;Marker1Animation2.end" repeatCount="1" from="17.7,413 119.7,465 213,339.7 243.7,216.3 123.7,216.3" to="117.7,423 111.7,445 223,349.7 263.7,226.3 103.7,226.3"/>
+	<animate attributeName="points" dur="2.5s" id="Marker1Animation2" begin="Marker1Animation1.end" from="117.7,423 111.7,445 223,349.7 263.7,226.3 103.7,226.3" to="17.7,413 119.7,465 213,339.7 243.7,216.3 123.7,216.3"/>
+</polygon>
+
+<polygon fill="none" stroke-width="1" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#Marker3); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="2s" id="Marker2Animation1" begin="0s;Marker2Animation2.end" repeatCount="1" from="466.3,180.3 519.7,397.7 434.3,331.7 292.3,257.7" to="456.3,175.3 514.7,357.7 494.3,341.7 222.3,257.7"/>
+	<animate attributeName="points" dur="1.5s" id="Marker2Animation2" begin="Marker2Animation1.end" from="456.3,175.3 514.7,357.7 494.3,341.7 222.3,257.7" to="466.3,180.3 519.7,397.7 434.3,331.7 292.3,257.7"/>
+</polygon>
+
+<polygon fill="none" stroke-width="2" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="2s" id="Marker3Animation1" begin="0s;Marker3Animation2.end" repeatCount="1" from="277.3,543.7 376.7,450.7 456,566.3" to="317.3,493.7 356.7,420.7 436,605.3"/>
+	<animate attributeName="points" dur="2s" id="Marker3Animation2" begin="Marker3Animation1.end" from="317.3,493.7 356.7,420.7 436,605.3" to="277.3,543.7 376.7,450.7 456,566.3"/>
+</polygon>
+
+<polygon fill="none" stroke-width="1" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#Marker2); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="2.5s" id="Marker4Animation1" begin="0s;Marker4Animation2.end" repeatCount="1" from="277.3,404.3 282.3,671.3 188.7,674.7 117.9,464.1" to="317.3,444.3 242.3,691.3 288.7,604.7 167.9,404.1"/>
+	<animate attributeName="points" dur="1.75s" id="Marker4Animation2" begin="Marker4Animation1.end" from="317.3,444.3 242.3,691.3 288.7,604.7 167.9,404.1" to="277.3,404.3 282.3,671.3 188.7,674.7 117.9,464.1"/>
+</polygon>
+
+<polygon fill="none" stroke-width="2" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="3s" id="Marker5Animation1" begin="0s;Marker5Animation2.end" repeatCount="1" from="1129,363 1224.7,270 1295.7,208 1434.7,406 1316.7,516 1234.3,412.3" to="1029,363 1254.7,310 1275.7,158 1234.7,456 1376.7,416 1154.3,402.3"/>
+	<animate attributeName="points" dur="3.25s" id="Marker5Animation2" begin="Marker5Animation1.end" from="1029,363 1254.7,310 1275.7,158 1234.7,456 1376.7,416 1154.3,402.3" to="1129,363 1224.7,270 1295.7,208 1434.7,406 1316.7,516 1234.3,412.3"/>
+</polygon>
+<polygon fill="none" stroke-width="1" style="marker-start: url(#Marker3);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="2s" id="Marker6Animation1" begin="0s;Marker6Animation2.end" repeatCount="1" from="1233,454.3 1287.7,284.7 1313.7,483.3 1226.7,547.7" to="1133,424.3 1387.7,384.7 1353.7,513.3 1296.7,587.7"/>
+	<animate attributeName="points" dur="2.25s" id="Marker6Animation2" begin="Marker6Animation1.end" from="1133,424.3 1387.7,384.7 1353.7,513.3 1296.7,587.7" to="1233,454.3 1287.7,284.7 1313.7,483.3 1226.7,547.7"/>
+</polygon>
+
+<polygon fill="none" stroke-width="1" style="marker-start: url(#Marker2);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="2.75s" id="Marker7Animation1" begin="0s;Marker7Animation2.end" repeatCount="1" from="1365.7,419.3 1373.3,578 1302.3,514.7 1315.3,457.3" to="1365.7,449.3 1393.3,548 1272.3,494.7 1215.3,487.3"/>
+	<animate attributeName="points" dur="2.5s" id="Marker7Animation2" begin="Marker7Animation1.end" from="1365.7,449.3 1393.3,548 1272.3,494.7 1215.3,487.3" to="1365.7,419.3 1373.3,578 1302.3,514.7 1315.3,457.3"/>
+</polygon>
+
+<polygon fill="none" stroke-width="1" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="2.5s" id="Marker8Animation1" begin="0s;Marker8Animation2.end" repeatCount="1" from="1084,522 1142.7,434.3 1077.7,375.3 1000.3,476.7" to="984,422 1102.7,334.3 1097.7,415.3 1090.3,456.7"/>
+	<animate attributeName="points" dur="3s" id="Marker8Animation2" begin="Marker8Animation1.end" from="984,422 1102.7,334.3 1097.7,415.3 1090.3,456.7" to="1084,522 1142.7,434.3 1077.7,375.3 1000.3,476.7"/>
+</polygon>
+
+<polygon fill="none" stroke-width="2" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="1.75s" id="Marker9Animation1" begin="0s;Marker9Animation2.end" repeatCount="1" from="1073.7,627.3 1142.7,535.7 1172,636 1122.8,670" to="1173.7,687.3 1042.7,595.7 1272,536 1140.8,679"/>
+	<animate attributeName="points" dur="2.25s" id="Marker9Animation2" begin="Marker9Animation1.end" from="1173.7,687.3 1042.7,595.7 1272,536 1140.8,679" to="1073.7,627.3 1142.7,535.7 1172,636 1122.8,670"/>
+</polygon>
+<polygon fill="none" stroke-width="1" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#Marker2); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="2s" id="Marker10Animation1" begin="0s;Marker10Animation2.end" repeatCount="1" from="844.7,668.7 972.7,621.3 966.3,509 853.7,618" to="914.7,608.7 952.7,691.3 986.3,609 893.7,588"/>
+	<animate attributeName="points" dur="3s" id="Marker10Animation2" begin="Marker10Animation1.end" from="914.7,608.7 952.7,691.3 986.3,609 893.7,588" to="844.7,668.7 972.7,621.3 966.3,509 853.7,618"/>
+</polygon>
+
+<polygon fill="none" stroke-width="1" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#Marker3); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="1.75s" id="Marker11Animation1" begin="0s;Marker11Animation2.end" repeatCount="1" from="750.3,631.7 862.3,386 678,258.3" to="650.3,591.7 802.3,416 718,198.3"/>
+	<animate attributeName="points" dur="2s" id="Marker11Animation2" begin="Marker11Animation1.end" from="650.3,591.7 802.3,416 718,198.3" to="750.3,631.7 862.3,386 678,258.3"/>
+</polygon>
+<polygon fill="none" stroke-width="1" style="marker-start: url(#Marker2);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="2.5s" id="Marker12Animation1" begin="0s;Marker12Animation2.end" repeatCount="1" from="684,450.7 959,284.7 875,389.3" to="614,490.7 859,174.7 845,419.3"/>
+	<animate attributeName="points" dur="3.25s" id="Marker12Animation2" begin="Marker12Animation1.end" from="614,490.7 859,174.7 845,419.3" to="684,450.7 959,284.7 875,389.3"/>
+</polygon>
+<polygon fill="none" stroke-width="1" style="marker-start: url(#Marker2);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="1.5s" id="Marker13Animation1" begin="0s;Marker13Animation2.end" repeatCount="1" from="519.7,399 528,522 633.7,507" to="589.7,410 598,482 583.7,577"/>
+	<animate attributeName="points" dur="2.25s" id="Marker13Animation2" begin="Marker13Animation1.end" from="589.7,410 598,482 583.7,577" to="519.7,399 528,522 633.7,507"/>
+</polygon>
+
+<polygon fill="none" stroke-width="1" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="2.75s" id="Marker14Animation1" begin="0s;Marker14Animation2.end" repeatCount="1" from="432.7,330.8 528,522 488,614.3 456,566.3" to="402.7,310.8 498,592 388,654.3 406,616.3"/>
+	<animate attributeName="points" dur="2s" id="Marker14Animation2" begin="Marker14Animation1.end" from="402.7,310.8 498,592 388,654.3 406,616.3" to="432.7,330.8 528,522 488,614.3 456,566.3"/>
+</polygon>
+<polygon fill="none" stroke-width="1" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#Marker2); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="3.25s" id="Marker15Animation1" begin="0s;Marker15Animation2.end" repeatCount="1" from="859.8,384.2 853.7,618 966.3,509" to="849.8,304.2 763.7,628 986.3,519"/>
+	<animate attributeName="points" dur="2s" id="Marker15Animation2" begin="Marker15Animation1.end" from="849.8,304.2 763.7,628 986.3,519" to="859.8,384.2 853.7,618 966.3,509"/>
+</polygon>
+<polygon fill="none" stroke-width="1" style="marker-start: url(#Marker3);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="1.75s" id="Marker16Animation1" begin="0s;Marker16Animation2.end" repeatCount="1" from="645.7,364.3 629.7,558 729.3,532" to="605.7,384.3 529.7,458 699.3,502"/>
+	<animate attributeName="points" dur="1.25s" id="Marker16Animation2" begin="Marker16Animation1.end" from="605.7,384.3 529.7,458 699.3,502" to="645.7,364.3 629.7,558 729.3,532"/>
+</polygon>
+
+
+<polygon fill="none" stroke-width="1" style="marker-start: url(#Marker2);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="2s" id="Marker17Animation1" begin="0s;Marker17Animation2.end" repeatCount="1" from="633.7,507 624.7,302.3 959,283 966.3,377 811,522 633.7,508.5" to="533.7,407 694.7,362.3 909,243 996.3,307 711,592 683.7,538.5"/>
+	<animate attributeName="points" dur="2.3s" id="Marker17Animation2" begin="Marker17Animation1.end" from="533.7,407 694.7,362.3 909,243 996.3,307 711,592 683.7,538.5" to="633.7,507 624.7,302.3 959,283 966.3,377 811,522 633.7,508.5"/>
+</polygon>
+
+<polygon fill="none" stroke-width="1" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="2.75s" id="Marker18Animation1" begin="0s;Marker18Animation2.end" repeatCount="1" from="602.7,668.7 557,575.7 727.3,618 695.3,680" to="592.7,608.7 527,475.7 827.3,638 615.3,580"/>
+	<animate attributeName="points" dur="1.22s" id="Marker18Animation2" begin="Marker18Animation1.end" from="592.7,608.7 527,475.7 827.3,638 615.3,580" to="602.7,668.7 557,575.7 727.3,618 695.3,680"/>
+</polygon>
+<polygon fill="none" stroke-width="1" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#Marker3); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="1.5s" id="Marker19Animation1" begin="0s;Marker19Animation2.end" repeatCount="1" from="30,461.2 139.7,402.5 142.3,472.6 65.7,606.3 25.7,566.3" to="91,401.2 199.7,312.5 102.3,492.6 85.7,676.3 125.7,506.3"/>
+	<animate attributeName="points" dur="1.8s" id="Marker19Animation2" begin="Marker19Animation1.end" from="91,401.2 199.7,312.5 102.3,492.6 85.7,676.3 125.7,506.3" to="30,461.2 139.7,402.5 142.3,472.6 65.7,606.3 25.7,566.3"/>
+</polygon>
+<polygon fill="none" stroke-width="1" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="3s" id="Marker20Animation1" begin="0s;Marker20Animation2.end" repeatCount="1" from="191.7,399 346.3,437.7 406,330.8 315,330.8" to="181.7,299 306.3,497.7 326,310.8 215,170.8"/>
+	<animate attributeName="points" dur="2.75s" id="Marker20Animation2" begin="Marker20Animation1.end" from="181.7,299 306.3,497.7 326,310.8 215,170.8" to="191.7,399 346.3,437.7 406,330.8 315,330.8"/>
+</polygon>
+<polygon fill="none" stroke-width="1" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="2.6s" id="Marker21Animation1" begin="0s;Marker21Animation2.end" repeatCount="1" from="1161,498.7 1129,573 966.3,509 1048.3,482.3" to="1061,528.7 1189,503 986.3,529 948.3,472.3"/>
+	<animate attributeName="points" dur="3s" id="Marker21Animation2" begin="Marker21Animation1.end" from="1061,528.7 1189,503 986.3,529 948.3,472.3" to="1161,498.7 1129,573 966.3,509 1048.3,482.3"/>
+</polygon>
+<polygon fill="none" stroke-width="1" style="marker-start: url(#markerCircle);  marker-mid: url(#markerCircle);  marker-end: url(#markerCircle); opacity:.17" stroke="#FFFFFF" stroke-miterlimit="10">
+	<animate attributeName="points" dur="1.47s" id="Marker22Animation1" begin="0s;Marker22Animation2.end" repeatCount="1" from="1140.4,437.7 1217.7,627.8 1316.7,516 1234.3,412.3" to="1040.4,417.7 1177.7,607.8 1196.7,616 1204.3,312.3"/>
+	<animate attributeName="points" dur="2.5s" id="Marker22Animation2" begin="Marker22Animation1.end" from="1040.4,417.7 1177.7,607.8 1196.7,616 1204.3,312.3" to="1140.4,437.7 1217.7,627.8 1316.7,516 1234.3,412.3"/>
+</polygon>
+</svg>

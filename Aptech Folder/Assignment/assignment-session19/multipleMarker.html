@@ -1,0 +1,68 @@
+<html>
+<head>
+  
+  <title>Google Maps Multiple Markers</title>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</head>
+<body>
+  <div id="map" style="height: 400px; width: 1200px; border: 2px solid red; margin: auto;">
+</div>
+<script type="text/javascript">
+    var locations = [
+      ['A', 6.156572, 7.550684, 4],
+      ['B', 6.157013, 7.599978, 5],
+      ['C', 6.145377, 7.610669, 3],
+      ['D', 6.130171, 7.613592, 2],
+      ['E', 6.125213, 7.597503, 1],
+      ['F', 6.103361, 7.583829, 6],
+      ['G', 6.098931, 7.562447, 7],
+      ['H', 6.0855, 7.564131, 8],
+      ['I', 6.084958, 7.581257, 9],
+      ['J', 6.088418, 7.606473, 10],
+      ['K', 6.080593, 7.625853, 11],
+      ['L', 6.065419, 7.624539, 12],
+      ['M', 6.068801, 7.60249, 13],
+      ['N', 6.067716, 7.587578, 14],
+      ['O', 6.063137, 7.561649, 15],
+      ['P', 6.051589, 7.548197, 16],
+      ['Q', 6.056113, 7.530767, 17],
+      ['R', 6.071576, 7.524133, 18],
+      ['S', 6.087214, 7.52809, 19],
+      ['T', 6.08615, 7.547099, 20],
+      ['U', 6.095122, 7.553552, 21],
+      ['V', 6.103511, 7.554412, 22],
+      ['W', 6.11527, 7.547381, 23]
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: new google.maps.LatLng(6.156572, 7.550684),
+      mapTypeId: google.maps.MapTypeId.HYBRID  
+    });
+    // ROADMAP SATELLITE
+
+
+
+
+    // var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) { 
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        label: locations[i][0],
+        map: map
+      });
+
+}
+    //   google.maps.event.addListener(marker, 'click', (function(marker, i) {
+    //     return function() {
+    //       infowindow.setContent(locations[i][0]);
+    //       infowindow.open(map, marker);
+    //     }
+    //   })(marker, i));
+    // }
+  </script>
+</body>
+</html>

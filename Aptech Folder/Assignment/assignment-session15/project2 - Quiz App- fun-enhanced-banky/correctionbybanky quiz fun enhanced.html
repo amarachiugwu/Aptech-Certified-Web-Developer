@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+	var row = parseInt(prompt("Please enter number of rows"));
+	var column = parseInt(prompt("Please enter number of columns"));
+
+	var mainArray = new Array();
+
+	for (var i = 0; i < row; i++) {
+		mainArray[i] = new Array();
+		for (var k = 0; k < column; k++) {
+			mainArray[i][k] = prompt(`Please enter value for row ${i + 1} Column ${k + 1}`);
+		}
+	}
+
+
+</script>
+</body>
+</html>

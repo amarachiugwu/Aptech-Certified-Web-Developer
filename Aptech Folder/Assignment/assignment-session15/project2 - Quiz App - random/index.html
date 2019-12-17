@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<p id="btn">Start Quiz!</p>
+
+<script type="text/javascript">
+//hear i want to write a code that asks questions at random from an array of lenght 10 ie i have 10 consecutive questions to ask my user when the user click the button at the center of my page
+
+//initialized/declared some of the variables before my function in case I am required to call them in diffrent functions probably
+	var btn = document.getElementById('btn');
+	var random;
+	var check = 10;
+	var num;
+	var array = new Array();
+	var score = 0;
+
+//hear i want to add an event to my btn instead of using onclick method in my HTML i used the addEventListener method where the first argument it takes is a click and the second argment is the name of the fuction 
+	btn.addEventListener('click', statQuiz);
+	function statQuiz() {
+
+//I initialized/declared and assigned values to my mutli dimentional array of name quiz and lenght 10, inside it I have 10 other arrays of lenght 2 where subscript 0 is the question I plan to ask my user and subscript 1 is the answer to my question
+	const quiz = [["Who invented Moutra D' Avion","wright brothers"], ["Which bird has its latin name as PIBALD", "bald eagle"], ["how many countries make up the United Kingdom","4"], ["What is the full meaning if INEC?","independence national electoral commision"], ["Who is the President of Nigeria", "Buhari"], ["What is the chemical formular of water","h2o"], ['what is the botanical name for fruit fly','drosophila melanogasta'], ['the proccess by which catillage grow into bone is called', 'osification'], ['the artery that pumps blood from the heart to all other parts of the body is called', 'arota'], ['the ceo of microsoft is', 'Bill Gate']];
+	
+//hear the main work starts, I have a for loop that is only valid for when j is less than check, I initialized/declared and assigned it a value of 10
+//inside the loop I generates a random number on every loop and it is stored on the random variable.
+//I initialized/declared and assigned value to ny array but its empty
+//the num variable checks for the indexOf that random number in the array, if it find that string in that array it returns 0 as in the first position of that random number in the array but if it doesn't find that random number in the array it returns -1 on this basics is where our if lays.
+//so if num == -1 it means that that random number haven't occured for the first time thaen the code below it is executed and the code below it explains as follows
+//at first an alert is shown with the string Question number the result of (random + 1) the concept of adding 1 to the random number is that assuming the random number is 2 the question that will be shown is the third question if you are to caunt the element positions from 1 to 10 so we want our user to see question 1 -10 at random instead of seeing questions 0 - 9 at random
+//then at the question and answer variable the position at quiz array is the random number generated and the then the subscript position 0 for question variable implies the element random subscript 0 which is the first value of that array also subscript position 1 for answer variable implies the element random subscript 1 which is the second value of that array
+//I also used the push method to add every method random no generated into my empty array created to be able to check for the random numbers that have occured and take the next step
+//response prompts what is stored in the question variable
+//then the next if and else depends on the condition that if response == what we stored in answer variable the the alert correct is executed and score is increased by 1(remember i assigned it a value of 0, so every correct answer adds 1 to score variable) otherwise alert incorrect answer string is displayed
+//coming back to line 42 if num == 0 meaning that that random number have occured before and our condition becomes false the code on that if block is not exexuted and the next code after it is executed and teh next code after it is the else block that tells the user You have answered this question click ok for the next question through an alert 
+//inside this else block is check++ that adds 1 to the value of check to make sure there is room to replace for that loop used to show the alert on the else block
+//the last if block in my loop checks if the lenght of my array is 10 and when this conditon becomes true I changed the value of my check to -1 that is less than my j and this automatically stops the loop an the next code in the function is executed 
+//having gotten the value of score variable determined by the number of correct answer i multiply it by 10 to get a value, because i have 10 questions i give each  value of 10% so that the total of them all will be 100% so depending on your score multipled by 10 will give me your score in percent and i can now go futher to display the last alert showing the user his score on percent
+		 for (var j = 0; j <= check; j++) {
+			random = Math.floor(Math.random() * 10);
+   	    	num =  array.indexOf(random);
+
+			     if (num == -1) {
+			     	 alert("Question number " + (random + 1));
+			         array.push(random);
+			         var question = quiz[random][0];
+					 var answer = quiz[random][1];
+					 var response = prompt(question);
+					 // response = response.toLowerCase();
+
+								if(response == answer){
+									alert('Correct!');
+									score = score + 1;
+								}else{
+									alert('Incorrect answer\nThe right answer is ' + answer);
+								}
+		                     
+		   	    }else{
+		   	    	 alert("You have answered this question click ok for the next question");
+		   	    	 check++;
+		   	    	  }
+		   	   	if(array.length == 10){
+		   	   		check = -1;
+		   	   	}
+   	     }
+	var percent = score * 10; 
+	alert(`Thank you for taking our Quiz!\n You scored ${percent}% of 100 `);
+	}
+</script>
+</body>
+</html>

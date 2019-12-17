@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Implanting Google Maps API</title>
+	<style type="text/css">
+		body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+		}
+		#myMap{
+			width: 80%;
+			height: 400px;
+			margin: 0 auto;
+			border: 2px solid red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Implanting Google Maps API</h1>
+	<div id="myMap"></div>
+
+	<script src="https://maps.google.com/maps/api/js?sensor=false "></script>
+
+	<script type="text/javascript">
+		var body = document.body;
+
+		body.addEventListener('load', initialized);
+		function initialized() {
+			var num = new google.maps.LatLng(6.4467007, 7.508956499999999);
+			var mapOptions = {
+				center : num,
+				zoom : 16,
+				mapTypeId : google.maps.MapTypeId.HYBRID
+				// SATELLITE, ROADMAP
+			}
+
+			var myMap = new google.maps.Map(mapCanvac,mapOptions);
+		}
+	</script>
+</body>
+</html>

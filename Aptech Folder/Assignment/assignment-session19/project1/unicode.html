@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>number validating</title>
+</head>
+<body>
+
+	<input type="text" id="numbers" onkeypress="valInput(event)">
+	<script type="text/javascript">
+		var input = document.getElementById('numbers');
+		function valInput(e) {
+			var unicode = e.keyCode;
+			console.log(unicode);
+			// var unicode = (e.which) ? e.which : e.keycode;
+			if(unicode != 8){
+				if (unicode < 48 || unicode > 47){
+					return false;
+				}
+			}
+			// var num = input.value;
+			// alert(e.keycode);
+			// var  code =  e.charCode? e.charCode : e.keyCode;
+			// alert(e);
+		}
+		// var number =  "0123456789";
+		// var code = number.charCodeAt(0);
+		// alert(code);
+	</script>
+</body>
+</html>

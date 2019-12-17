@@ -1,0 +1,55 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	width: 100%;
+	background-color: #eee;
+}
+.container {
+	width: 960px;
+	min-height: 600px;
+	margin: auto;
+	font-family: tahoma;
+	background-color: #fff;
+}
+.container header{
+	width:100% ;
+	height: 100px;
+	background-color: #000;
+	color: #eee;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	font-style: italic;
+}
+.container section{
+	width: 100
+	5;
+	max-height: 400px;
+	padding: 20px 25px;
+}
+.container section form{
+	width: 60%;
+	height: auto;
+}
+.container section form input, textarea{
+	width: 100%;
+	height: 45px;
+	background-color: #eee;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 15px;
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: #282923;
+	outline: none;
+}
+.container section form textarea{
+	height: 150px;
+	resize: none;
+}
+.container section form img{
+	width: 250px;
+	cursor: pointer;
+}

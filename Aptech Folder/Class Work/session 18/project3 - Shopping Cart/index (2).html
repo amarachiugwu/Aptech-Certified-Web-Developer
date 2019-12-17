@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>My Shoping Cart</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+<section class="container">
+	<header>
+		<h1>My Shoping Cart</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="#">My Account</a></li>
+			<li><a href="checkout.html">Checkout</a></li>
+		</ul>
+			<span class="basket"><a href="myCart.html">
+				<i class="fa fa-cart-arrow-down"></i>
+				<span id="items"></a></span>
+			</span>
+	</nav>
+
+	<section>
+		<article class="product">
+			<div class="image">
+				<img src="images/img1.jpg">
+			</div>
+
+			<h2>
+				<a href="productDesc.html" onclick="fetchProd(event, this)" data-id="001">iPhone 6</a>
+			</h2>
+			<h3>&#8358;90,000</h3>
+			<span class="btn" data-id="001" data-name="iPhone 6" data-price="90000" onclick="addtoCart(this)">Add to cart</span>
+		</article>
+		
+		<article class="product">
+			<div class="image">
+				<img src="images/img2.jpg">
+			</div>
+
+			<h2>	
+				<a href="productDesc.html" onclick="fetchProd(event, this)" data-id="002">Amethyst Ring</a>
+			</h2>
+			<h3>&#8358;250,000</h3>
+			<span class="btn" data-id="002" data-name="Amethyst Ring" data-price="250000" onclick="addtoCart(this)">Add to cart</span>
+		</article>
+
+		<article class="product">
+			<div class="image">
+				<img src="images/img3.jpg">
+			</div>
+
+			<h2>
+				<a href="productDesc.html" onclick="fetchProd(event, this)" data-id="003">Diamond Pendant</a>
+			</h2>
+			<h3>&#8358;120,000</h3>
+			<span class="btn" data-id="003" data-name="Diamond Pendant" data-price="120000" onclick="addtoCart(this)">Add to cart</span>
+		</article>
+
+		<article class="product">
+			<div class="image">
+				<img src="images/img4.jpg">
+			</div>
+
+			<h2>
+				<a href="productDesc.html" onclick="fetchProd(event, this)" data-id="004">iPhone 6s</a>
+			</h2>
+			<h3>&#8358;100,000</h3>
+			<span class="btn" data-id="004" data-name="iPhone 6s" data-price="100000" onclick="addtoCart(this)">Add to cart</span>
+		</article>
+
+		<article class="product">
+			<div class="image">
+				<img src="images/img5.jpg">
+			</div>
+
+			<h2>
+				<a href="productDesc.html" onclick="fetchProd(event, this)" data-id="005">Jewelry Set</a>
+			</h2>
+			<h3>&#8358;350,000</h3>
+			<span class="btn" data-id="005" data-name="Jewellery Set" data-price="350000" onclick="addtoCart(this)">Add to cart</span>
+		</article>
+
+		<article class="product">
+			<div class="image">
+				<img src="images/img6.jpg">
+			</div>
+
+			<h2>
+				<a href="productDesc.html" onclick="fetchProd(event, this)" data-id="006">Emerald Necklace</a>
+			</h2>
+			<h3>&#8358;450,000</h3>
+			<span class="btn" data-id="006" data-name="Emerald Necklace" data-price="450000" onclick="addtoCart(this)">Add to cart</span>
+		</article>
+	</section>
+</section>
+
+<!-- Build the product description page. When he clicks the title, it should take him to the page with the product details. It should be such that the user can equally add to cart from there. -->
+<script src="js/custom.js"></script>
+</body>
+</html>

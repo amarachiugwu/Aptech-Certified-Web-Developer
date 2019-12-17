@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Working with Events</title>
+</head>
+<body>
+<h1>Working with Events in JS</h1>
+<button onclick="greetUser()">Click here to receive a greeting</button>
+<button ondblclick="changeBg()">Click here to change the background color</button>
+
+
+<script>
+	// Create click event handler
+	function greetUser() {
+		alert("Good Morning!");
+	}
+
+	function changeBg() {
+		document.body.style.backgroundColor = "orange";
+	}
+</script>
+</body>
+</html>

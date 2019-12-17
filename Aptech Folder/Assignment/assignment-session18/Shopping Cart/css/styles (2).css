@@ -1,0 +1,171 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	margin: 0;
+	background-color: #eee;
+}
+
+.container{
+	width: 960px;
+	min-height: 600px;
+	background-color: #fff;
+	margin: auto;
+	font-family: verdana;
+}
+
+.container header{
+	width: 100%;
+	height: 100px;
+	background-color: powderblue;
+	text-align: center;
+	padding: 10px;
+	color: #222;
+	font-size: 20px;
+}
+
+.container nav{
+	width: 100%;
+	height: 60px;
+	background-color: black;
+	color: #fff;
+	padding-top: 12px;
+}
+
+.container nav ul{
+	width: 50%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.container nav ul li{
+	float: left;
+}
+
+.container nav ul li a{
+	display: block;
+	text-decoration: none;
+	color: orange;
+	font-size: 16px;
+	padding: 7px 12px;
+}
+
+.container nav span.basket{
+	display: block;
+	width:auto ;
+	float: right;
+	padding-top: 5px;
+	font-size: 20px;
+}
+
+.container nav .basket #items{
+	display: inline-block;
+	width: auto;
+	padding: 0 3px;
+}
+
+.container section{
+	width: 100%;
+	min-height: 600px;
+	padding-left: 30px;
+}
+
+.container section article.product{
+	width: 30%;
+	min-height: 250px;
+	display: inline-block;
+	margin: 30px 10px 0 0;
+	text-align: center;
+}
+
+.container section .product .image{
+	overflow: hidden;
+	width: 100%;
+	height: 200px;
+}
+
+.container section .product h2 a{
+	color: #222;
+	text-decoration: none;
+}
+
+.container section .product span.btn{
+	display: block;
+	background-color: #282923;
+	width: 80%;
+	margin: auto;
+	color: orange;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.container .sticky {
+  position: fixed;
+  top: 0;
+  width: 960px;
+}
+
+.container .sticky + .content {
+  padding-top: 60px;
+}
+
+.container section{
+	width: 100%;
+	padding: 40px;
+	min-height: 600px;
+	background-color: #fff;
+}
+
+.container section #productImage{
+	width: 45%;
+	height: 500px;
+	float: left;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	padding: 50px;
+	background-color: #282923;
+	background-size: cover;
+	background-position: center;
+}
+
+.container section .details{
+	width: 50%;
+	height: 500px;
+	float: right;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	padding: 20px;
+	background-color: #eee;
+}
+
+.container section .details p{
+	text-align: justify;
+	color: #222;
+	font-size: 15px;
+}
+
+.container section .details  h2{
+	text-align: center;
+	color: #222;
+	padding: 10px;
+}
+
+.container section .details span.btn{
+	display: block;
+	background-color: #282923;
+	width: 80%;
+	margin: auto;
+	margin-top: 15px;
+	color: orange;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.container .basket a{
+	color: #eee;
+}

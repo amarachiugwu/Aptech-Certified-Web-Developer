@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Implementing IndexedDB API</title>
+</head>
+<body>
+	<h1>Implementing IndexedDB API</h1>
+	<button onclick="addRecord()">Add Record</button>
+	<button onclick="getRecord()">Get a Record</button>
+	<!-- <button onclick="get2Record()">Get2 a Record</button> -->
+
+	<ul id="info"></ul>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		var info = document.getElementById('info');
+		var db;
+		var transaction;
+		var indexedDB = window.indexedDB || window.mozindexedDB || window.webkitindexedDB || window.msindexedDB;
+		
+		var openRequest = indexedDB.open('aptech-web-nov', 5 );
+
+		openRequest.onerror = function (e) {
+			info.innerHTML += '<li> Sorry, something went wrong! DB could not be initialized. ' + e.target.errorCode + '</li>'
+		}
+
+		openRequest.onsuccess = function (e) {
+			db = e.target.result;
+			info.innerHTML += '<li>Database initialized Successfully!</li>';
+		}
+
+		openRequest.onupgradeneeded = function (e) {
+			var db = e.target.result;
+			if (db.objectStoreNames.contains('students')) {
+				db.deleteObjectStore('students');
+				info.innerHTML += '<li>ObjectStore Deleted succesfully! </li>';
+			}
+
+			db.createObjectStore('students', {keypath : 'id', autoIncrement : true});
+			info.innerHTML += '<li>New Object Store created sucessfully! </li>';
+		}
+
+
+		function addRecord() {
+			var name = prompt('Please enter your full name');
+			var course = prompt('Please enter course of study');
+			var campus = prompt('Please enter campus');
+
+			var record = {
+				name : name,
+				course : course,
+				campus : campus
+			}
+
+			transaction = db.transaction(['students'], 'readwrite');
+			var objectStore = transaction.objectStore('students');
+			var addRequest = objectStore.add(record);
+
+			addRequest.onerror = function (e) {
+				info.innerHTML += '<li>Sorry record could not be added! Please try again</li>';
+			}
+
+			addRequest.onsuccess = function (e) {
+				info.innerHTML += '<li>Record added successfully</li>';
+			}
+
+		}
+
+// 		function getRecord() {
+
+// 			   transaction = db.transaction(['students'], 'readwrite').objectStore('students');  
+// 			   var count = transaction.count();
+
+// 			   transaction.openCursor().onsuccess = function(e) {
+// 			   	var input = prompt('Please enter a key to view Students details');
+// 		        input = parseInt(input);      
+// 			   	if (input > 0 && (input < (count.result) + 1)) { 
+
+// 				var request = transaction.get(input);          
+				
+// 		    request.onsuccess = function(event) {                              
+// 			    var demo = document.getElementById('demo');
+// 				info.innerHTML += '<h1>' + request.result.name + "'s " + 'details' + '</h1>' + '<li>Name: ' + request.result.name + '</li>' + '<li>course: ' + request.result.course + '</li>' + '<li>campus: ' + request.result.campus + '</li>';          
+// 		     }; 
+
+// 		     request.onerror = function(event) {  
+// 				    info.innerHTML = 'invalid key' + event.target.errorCode;
+// 				}; 
+
+// 			} else{
+// 			   		alert('The key entered cannot be found  Please enter a valid key');
+			   		
+// 			  }   
+// 		}; 
+
+// }
+
+		function getRecord() { 
+
+		transaction = db.transaction(['students'], 'readwrite').objectStore('students'); 
+			 var count = transaction.count();
+
+		if (input > 0 && (input < (count.result) + 1)) {
+			var input = prompt('Please enter a key to view Students details');
+		input = parseInt(input);
+
+		var request = transaction.get(input);          
+		request.onerror = function(event) {  
+		info.innerHTML = 'invalid key' + event.target.errorCode;
+		}; 
+		    request.onsuccess = function(event) {                              
+		    // Work with the request.result                               
+		    var demo = document.getElementById('demo');
+			info.innerHTML += '<h1>' + request.result.name + "'s " + 'details' + '</h1>' + '<li>Name: ' + request.result.name + '</li>' + '<li>course: ' + request.result.course + '</li>' + '<li>campus: ' + request.result.campus + '</li>';          
+		     }; 
+		}
+		 } 
+
+	</script>
+</body>
+</html>

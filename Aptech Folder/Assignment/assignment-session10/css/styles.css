@@ -1,0 +1,71 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #999;
+	font-family: verdana;
+	margin: 0;
+}
+
+.container{
+	width: 960px;
+	background-color: white;
+	margin: 0 auto;
+	padding-left: 100px;
+}
+
+.container h1{
+	margin: 0 auto 20px;
+	padding-top: 30px;
+}
+
+.container .controls{
+	width: 720px;
+}
+
+.container .controls fieldset{
+	border: yellow solid 10px;
+	margin: 10px 0;
+	padding: 10px;
+	background-color: #FFFFE0;
+}
+
+.container .controls fieldset form .address{
+vertical-align: top;
+}
+
+label{
+	width: 180px;
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+}
+label, input {
+	margin-bottom: 10px;
+	padding-left: 
+}
+
+label:hover, input:hover, datalist option:hover{
+	font-size: 20px;
+	overflow: hidden;
+}
+
+label.auto{
+	width: auto;
+}
+ .red{
+	background-color: red;
+	padding: 8px;
+	width: 60px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+ .purple{
+	background-color: purple;
+	padding: 8px;
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+}

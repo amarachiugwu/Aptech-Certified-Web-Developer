@@ -1,0 +1,148 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	margin: 0;
+	background-color: #eee;
+}
+
+.container{
+	width: 960px;
+	min-height: 600px;
+	background-color: #fff;
+	margin: auto;
+	font-family: verdana;
+}
+
+.container header{
+	width: 100%;
+	height: 100px;
+	background-color: #282923;
+	text-align: center;
+	padding: 5px;
+	color: #eee;
+	font-size: 20px;
+}
+
+.container nav{
+	width: 100%;
+	height: 60px;
+	background-color: black;
+	color: #fff;
+	padding-top: 12px;
+}
+
+.container nav ul{
+	width: 50%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style-type: none; 
+}
+
+.container nav ul li{
+	float: left;
+}
+
+.container nav ul li a{
+	display: block;
+	text-decoration: none;
+	color: orange;
+	font-size: 16px;
+	padding: 7px 12px;
+}
+
+.container nav span.basket{
+	display: block;
+	width: auto;
+	float: right;
+	padding-top: 5px;
+	font-size: 19px;
+	margin-right: 15px;
+}
+
+.container nav .basket #items{
+	display: inline-block;
+	width: auto;
+	padding: 0 3px;
+}
+
+.container section{
+	width: 100%;
+	min-height: 600px;
+	padding-left: 40px;
+}
+
+.container section article.product{
+	width: 30%;
+	min-height: 250px;
+	display: inline-block;
+	margin: 30px 10px 0 0;
+	text-align: center; 
+}
+
+.container section .product .image{
+	overflow: hidden;
+	width: 100%;
+	height: 200px;
+}
+
+.container section .product h2 a{
+	color: #282923;
+	text-decoration: none;
+}
+
+.container section .product span.btn{
+	display: block;
+	width: 80%;
+	margin: auto;
+	background-color: #282923;
+	color: orange;
+	padding: 10px;
+	cursor: pointer;
+	height: 45px;
+}
+
+.container section #productImage{
+	width: 300px;
+	height: 400px;
+	background-color: #eee;
+	float: left;
+	margin: 25px 60px 30px 10px;
+	background-size: cover;
+	background-position: center;
+}
+
+.container section #prod{
+	width: 400px;
+	min-height: 500px;
+	float: left;
+	padding: 25px 20px;
+}
+
+
+.container section #prod h1{
+	font-size: 30px;
+	margin: 0;
+}
+
+
+.container section #prod h2{
+	font-size: 25px;
+}
+
+.container section #prod span{
+	display: block;
+	width: 70%;
+	margin: 0;
+	height: 50px;
+	cursor: pointer;
+	background-color: #000;
+	color: orange;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: center;
+	padding: 13px;
+}

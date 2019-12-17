@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Working with the date Object</title>
+</head>
+<body>
+<h1>Working with the date Object</h1>
+||
+<script type="text/javascript">
+	var today = new Date();
+	var dayOfWeek = today.getDay();
+	var date = today.getDate();
+	var month = today.getMonth();
+	var year = today.getFullYear();
+	var dates = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+	var storeDates = [date];
+	console.log(storeDates);
+	var suffix = ['st', 'nd', 'rd', 'th'];
+	var days = ['sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satuday'];
+	var months = ['Jenuary', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+	if(dates[date] == date){
+		if(date == dates[1] ){
+	alert('Todays date is \n ' + days[dayOfWeek] + ', ' + date + 'st'  + ' of' + ' ' +  months[month] + ', ' + year);
+	}
+	if(date == dates[2] ){
+	alert('Todays date is \n ' + days[dayOfWeek] + ', ' + date + 'nd'  + ' of' + ' ' +  months[month] + ', ' + year);
+	}
+	if(date == dates[3]  
+		){
+	alert('Todays date is \n ' + days[dayOfWeek] + ', ' + date + 'rd'  + ' of' + ' ' +  months[month] + ', ' + year);
+	}
+	if(date == dates[21] ){
+	alert('Todays date is \n ' + days[dayOfWeek] + ', ' + date + 'st'  + ' of' + ' ' +  months[month] + ', ' + year);
+	}
+	if(date == dates[22] ){
+	alert('Todays date is \n ' + days[dayOfWeek] + ', ' + date + 'nd'  + ' of' + ' ' +  months[month] + ', ' + year);
+	}
+	if(date == dates[23]  
+		){
+	alert('Todays date is \n ' + days[dayOfWeek] + ', ' + date + 'rd'  + ' of' + ' ' +  months[month] + ', ' + year);
+	}
+	if(date == dates[31]  
+		){
+	alert('Todays date is \n ' + days[dayOfWeek] + ', ' + date + 'st'  + ' of' + ' ' +  months[month] + ', ' + year);
+	}
+	}
+
+	// else if(date == dates[3] || dates[23] ){
+	// 	alert('Todays date is \n ' + days[dayOfWeek] + ', ' + date + 'rd'  + ' of' + ' ' +  months[month] + ', ' + year);
+	// }
+	else{
+		date
+	}
+</script>
+</body>
+</html>

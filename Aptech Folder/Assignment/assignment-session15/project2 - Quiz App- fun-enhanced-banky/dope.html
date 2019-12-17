@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+   <script type="text/javascript">
+   	 var rand;
+      var array = new Array();
+      var num;
+       var check = 10;
+   	    for (var i = 1; i <= check; i++) {
+   	    	   rand = Math.floor(Math.random() * 10) + 1;
+   	    	      	num =  array.indexOf(rand);
+
+   	    	     if (num == -1) {
+   	    	     	 alert("QUestion" + i);
+                     array.push(rand);
+                     check++;
+   	    	     }else{
+   	    	     	console.log(rand + ' is Already in the array')  
+   	    	     }
+   	    	 }
+
+   	    	console.log(array);
+
+   </script>
+</body>
+</html>

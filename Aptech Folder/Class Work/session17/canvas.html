@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Canvas</title>
+	<style type="text/css">
+	#canvas{
+		width: 600px;
+		height: 500px;
+		border: 1px solid red;
+	}
+	#canvas2{
+		width: 800px;
+		height: 400px;
+		border: 1px solid blue;
+	}
+	#canvas3{
+		width: 800px;
+		height: 400px;
+		border: 1px solid purple;
+	}
+	</style>
+</head>
+<body>
+<h1>Working with HTML5 Canvas</h1>
+<canvas id="canvas">
+	<p>Sorry, your browser does nto support HTML5 canvas</p>
+	<ul>
+		<li>Download<a href="#"> Chrome </a>Brower</li>
+		<li>Download<a href="#"> Mozilla</a> Brower</li>
+		<li>Download<a href="#"> Internet Explorer</a> Brower</li>
+	</ul>
+	<!-- The content of a canvas element is rendered using javascript -->
+</canvas>
+
+<canvas id="canvas2"></canvas>
+<canvas id="canvas3"></canvas>
+<img src="1.jpg" id="myImg" style="display: none;" >
+
+<script type="text/javascript">
+	var canvas = document.getElementById('canvas');
+	// Set canvas context
+	var ctx = canvas.getContext("2d");
+	ctx.beginPath();
+	ctx.rect(60, 20, 200, 50);
+	// .rect() takes four arguments; x, y, width and height. X means the direction ie rightward and Y means downward. They represent the cordinates of your canvas.
+	ctx.fillStyle = "purple";
+	ctx.fill();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.moveTo(55, 15);
+	ctx.lineTo(265, 15);
+	ctx.lineWidth = 1;
+	ctx.strokeStyle = "#000";
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.moveTo(55, 15);
+	ctx.lineTo(55, 76);
+	ctx.lineWidth = 1;
+	ctx.strokeStyle = "#000";
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.moveTo(55, 75);
+	ctx.lineTo(265, 75);
+	ctx.lineWidth = 1;
+	ctx.strokeStyle = "#000";
+	ctx.stroke();
+	ctx.closePath();
+
+	ctx.beginPath();
+	ctx.moveTo(265, 15);
+	ctx.lineTo(265, 75);
+	ctx.lineWidth = 1;
+	ctx.strokeStyle = "#000";
+	ctx.stroke();
+	ctx.closePath();
+
+	var canvas2 = document.getElementById('canvas2');
+	var context = canvas2.getContext("2d");
+
+	context.beginPath();
+	var x = canvas2.width / 2;
+	var y = canvas2.height / 2;
+	var radius = 50;
+
+	context.arc(x, y, radius, 0, 2*Math.PI, false);
+
+	context.fillStyle = "yellow";
+	context.fill();
+	context.closePath();
+
+	context.beginPath();
+	var x = 125;
+	var y = 60;
+	var radius = 10;
+
+	context.arc(x, y, radius, 0, 2*Math.PI, false);
+
+	context.fillStyle = "white";
+	context.fill();
+	context.closePath();
+
+	context.beginPath();
+	var x = 175;
+	var y = 60;
+	var radius = 10;
+
+	context.arc(x, y, radius, 0, 2*Math.PI, false);
+
+	context.fillStyle = "white";
+	context.fill();
+	
+
+	context.beginPath();
+	var x = 175;
+	var y = 60;
+	var radius = 4;
+
+	context.arc(x, y, radius, 0, 2*Math.PI, false);
+
+	context.fillStyle = "black";
+	context.fill();
+	
+
+	context.beginPath();
+	var x = 125;
+	var y = 60;
+	var radius = 4;
+
+	context.arc(x, y, radius, 0, 2*Math.PI, false);
+
+	context.fillStyle = "black";
+	context.fill();
+	
+
+	context.beginPath();
+	var x = 150;
+	var y = 90;
+	var radius = 20;
+
+	context.arc(x, y, radius, 0, 1*Math.PI, false);
+
+	context.fillStyle = "red";
+	context.fill();
+	context.closePath();
+
+	window.onload = function() {
+		var c = document.getElementById('canvas3');
+		var ctx = c.getContext('2d');
+		var img = document.getElementById('myImg');
+		ctx.beginPath();
+		ctx.drawImage(img, 0, 0, 95, 130)
+	}
+
+</script>
+</body>
+</html>

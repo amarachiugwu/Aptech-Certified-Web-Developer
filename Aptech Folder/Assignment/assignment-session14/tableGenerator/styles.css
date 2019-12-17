@@ -1,0 +1,35 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-image: url(images/bg1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container{
+	width: 800px;
+	min-height: 500px;
+	margin: 0 auto;
+	background-color: #FA9E92;
+	padding:10px 50px;
+}
+h1{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+label{
+	margin: 10px;
+	font-size: 20px;
+	text-align: right;
+	width: 450px;
+}
+
+input{
+	height: 50px;
+	word-spacing: 150px;
+	margin: 5px;
+	padding: 5px;
+	outline: none;
+	break-after: 5px;
+}

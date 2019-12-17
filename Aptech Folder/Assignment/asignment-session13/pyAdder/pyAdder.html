@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Py Adder</title>
+</head>
+<body>
+<h1>Py Adder</h1>
+<label for="word">Enter a word</label>
+<input type="text" name="" id="word" oninput="addWord()">
+<button id="show" onclick="view()">click Here</button>
+<label for="showWord">Word Transformed</label>
+<input type="text" name="" id="showWord">
+
+<script>
+	function addWord() {
+		var word = document.getElementById('word');
+	var text = document.getElementById('word').value;
+	text = text.replace(/\s+/g, " ");
+	text = text.split(' ');
+	console.log(text);
+	}
+	function view() {
+		var word = document.getElementById('word');
+	var text = document.getElementById('word').value;
+	text = text.replace(/\s+/g, " ");
+	text = text.split(' ');
+	console.log(text);
+		var txt = "Py";
+		if(text)
+		var sWord= txt + text;
+		var shoWord = document.getElementById('showWord');
+		document.getElementById('showWord').innerHTML = "come" + sWord;
+		
+		console.log(sWord);
+		console.log(document.getElementById('showWord').innerHTML);
+		
+	}
+</script>
+</body>
+</html>

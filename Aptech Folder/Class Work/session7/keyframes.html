@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Working With @keyframes Rule</title>
+
+	<style type="text/css">
+		h1{
+			font-family: verdana;
+			font-size: 40px;
+			text-transform: uppercase;
+			animation-name: myfirst;
+			animation-direction: alternate;
+			animation-delay: 1s;
+			animation-play-state: running;
+			animation-iteration-count: 2;
+			animation-timing-function: ease-in-out;
+			animation-duration: 3s;
+
+			/*Mozilla Firefox*/
+			-moz-animation-name: myfirst;
+			-moz-animation-direction: alternate;
+			-moz-animation-delay: 1s;
+			-moz-animation-play-state: running;
+			-moz-animation-iteration-count: 2;
+			-moz-animation-timing-function: ease-in-out;
+			-moz-animation-duration: 3s;
+
+		/*Google Chrome and safari*/
+			-webkit-animation-name: myfirst;
+			-webkit-animation-direction: alternate;
+			-webkit-animation-delay: 1s;
+			-webkit-animation-play-state: running;
+			-webkit-animation-iteration-count: 2;
+			-webkit-animation-timing-function: ease-in-out;
+			-webkit-animation-duration: 3s;
+
+			/*opera*/
+			-o-animation-name: myfirst;
+			-o-animation-direction: alternate;
+			-o-animation-delay: 1s;
+			-o-animation-play-state: running;
+			-o-animation-iteration-count: 2;
+			-o-animation-timing-function: ease-in-out;
+			-o-animation-duration: 3s;
+}
+
+		@keyframes myfirst{
+			from{color: red;
+		font-size: 40px;}
+			to{color: orange;
+				font-size:60px;}
+		}
+
+		@-moz-keyframes myfirst{
+			from{color: red;
+		font-size: 40px;}
+			to{color: orange;
+				font-size:60px;}
+		}
+
+		@-webkit-keyframes myfirst{
+			from{color: red;
+		font-size: 40px;}
+			to{color: orange;
+				font-size:60px;}
+		}
+		@-o-keyframes myfirst{
+			from{color: red;
+		font-size: 40px;}
+			to{color: orange;
+				font-size:60px;}
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Working With @keyframes Rule</h1>
+</body>
+</html>

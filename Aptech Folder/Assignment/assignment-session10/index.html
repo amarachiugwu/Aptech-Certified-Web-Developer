@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date biz</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<section class="container">
+		<h1>Please Enter Your Details For Our Dating Website!</h1>
+	<section class="controls">
+		<fieldset>
+			<legend>Your Face</legend>
+				<form>
+					<label for="image">Your Image:</label>
+					<input type="file" id="image" multiple="" required=""><br>
+					<label>Image Preview:</label>
+					<img id="preview" width="250">
+				</form>
+		</fieldset>
+
+		<fieldset>
+			<legend>Your General Details</legend>
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" placeholder="Enter full name" id="name" required=""><br>
+					<label for="Gender">Gender:</label>
+					<input type="radio" id="male" value="male" name="sex" required="">
+					<label for="male" class="auto">Male</label>
+					<input type="radio" id="female" value="female" name="sex" required="">
+					<label for="female" class="auto">Female</label><br>
+					<label for="age">Age:</label>
+					<input type="number" id="age"><br>
+					<label for="date">Date of birth:</label>
+					<input type="date" id="date"><br>
+					<label for="color">Favourite Color:</label>
+					<input type="color" id="color"><br>
+					<label for="city">Which Country:</label>
+					<input type="text" list="country" id="city">
+					<datalist id="country">
+					<option>Nigeria</option>
+					<option>Canada</option>
+					<option>America</option>
+					<option>South Africa</option>
+					<option>Italy</option>
+					<option>Spain</option>
+					<option>England</option>
+					<option>London</option>
+					<option>Ghana</option>
+					</datalist>
+				</form>
+		</fieldset>
+
+				<fieldset>
+			<legend>Your Indicators</legend>
+				<form>
+					<label for="Height">Height:</label>
+					 <span class="red">Short</span><input type="range" id="Height"><span class="purple">Tall</span><br>
+					 <label for="Salary">Salary:</label>
+					 <span class="red">Poor</span><input type="range"><span class="purple">Rich</span>
+				</form>
+		</fieldset>
+
+				<fieldset>
+			<legend>Your Contact Infomation</legend>
+				<form>
+					<label for="email">Email:</label>
+					<input type="email" id="email"><br>
+					<label for="tel">Mobile:</label>
+					<input type="tel" id="tel"><br>
+					<label for="address"><span class="address">Address:</span></label>
+					<textarea rows="4" cols="40" id="address"></textarea><br>
+					<span class="Method-of-contact">Method To Contact You: </span>
+					<input type="checkbox" name="contact" value="Email" required="" id="mail">
+					<label for="mail" class="auto">Email</label>
+					<input type="checkbox" name="contact" value="Whatsapp" id="Whatsapp">
+					<label for="Whatsapp" class="auto">Whatsapp</label>
+					<input type="checkbox" name="contact" value="In-App-Chat" id="In-App-Chat">
+					<label for="In-App-Chat" class="auto">In-App-Chat</label>
+				</form>
+				
+		</fieldset>
+	</section>
+	<input type="submit" name="">
+	</section>
+	<script type="text/javascript" src=js/image.js></script>
+</body>
+</html>

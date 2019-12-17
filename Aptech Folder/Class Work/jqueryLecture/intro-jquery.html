@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction to jquery</title>
+	<script src="js/jquery.js"></script>
+	<style type="text/css">
+		.red{
+			color: red;
+			background-color: black;
+			padding: 5px;
+		}
+		.blue{
+			color: blue;
+			background-color: black;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Introduction to jquery</h1>
+	<button id="btnOuch">Say ouch</button>
+	<button id="btnOuch2">Say ouch</button>
+	<button id="addRed">Add Red Class</button>
+	<button id="addBlue">Add Blue Class</button>
+	<h2 id="msg">Working with jquery</h2>
+	<h2 class="msg2">Working with jquery</h2>
+	<h2 class="msg2">Working with jquery</h2>
+	<h2 class="msg2">Working with jquery</h2>
+	<h3 id="lemon">lemon</h3>
+<script>
+	$(document).ready(function () {
+		$('#btnOuch').on('click', function () {
+			alert('Ouch');
+			$("h2.msg2").css('color', 'orange');
+		})
+		$('#btnOuch2').on('mouseover', function () {
+			alert('Ouch');
+		})
+		$('#msg').click(function () {
+			$('h2.msg2').hide('slow', function () {
+				alert('All  h2 Element with class of msg2 successfully deleted');
+			});
+		})
+
+		$('#lemon').mouseover(function () {
+			$(this).append(' cookie!');
+		})
+		$('#addRed').on('click', function () {
+			$('#msg').addClass('red');
+		})
+		$('#addBlue').on('click', function () {
+			$('h2.msg2').addClass('blue');
+		})
+	})
+</script>
+</body>
+</html>

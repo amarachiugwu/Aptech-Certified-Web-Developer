@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Simple Puzzle Game App</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<section class="container">
+	<header>
+		<h1>Personal Data</h1>
+	</header>
+	<section class="main">
+		<div class="dragNdrop">
+			<p id="txt">Drag and drop your passport on the area provided to your right or choose file by clicking the button <input type="file" id="image" name=""></p>
+			<div id="passport" ondragleave="dragLeave(event)" ondragover="dragOver(event)" ondrop="drop(event)"></div>
+			<!-- <img width="180px" height="180px" id="preview" > -->
+		</div>
+		<img width="180px" height="180px" id="preview" style="display: none;">
+		<form>
+			<label for="name" >Name:</label>
+			<input type="text" id="name" name="" placeholder="Please Enter your name"><br>
+			<label for="DateofBirth" >Date of Birth:</label>
+			<input type="text" name="" id="DateofBirth" placeholder="Please Enter your Date of Birth"><br>
+			<label for="PlaceofBirth" >Place of Birth:</label>
+			<input type="text" name="" id="PlaceofBirth" placeholder="Please Enter your Place of Birth"><br>
+			<label for="age" >Age:</label>
+			<input type="number" name="" id="age" placeholder="Please Enter your Age"><br>
+			<label for="Nationality" >Nationality:</label>
+			<input type="text" name="" id="Nationality" placeholder="Please Enter your Nationality"><br>
+			<label for="address" >Address:</label>
+			<input type="text" name="" id="address" placeholder="Please Enter your Address"><br>
+			<label for="msg">Message</label>
+			<textarea id="msg" placeholder="Please let us know what is in your mind"></textarea><br>
+			<button id="Submit">Submit</button>
+		</form>
+	</section>
+</section>
+
+
+<script src="js/drop.js"></script>
+</body>
+</html>

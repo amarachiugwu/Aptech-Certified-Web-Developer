@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Getting Elements Using getElementById</title>
+</head>
+<body>
+<h1 id="heading">Using document.getElementById()</h1>
+<button onclick="changeBg()">Change Heading's Background Color</button>
+<button onclick="changeContent()">Change content of heading</button>
+
+
+<script type="text/javascript">
+	function changeBg() {
+		// Select element to change its bg color
+		var h1Element = document.getElementById('heading');
+		//Change bg color of element selected
+		h1Element.style.backgroundColor = "purple";
+	}
+
+
+	function changeContent() {
+		var h1Element = document.getElementById('heading');
+		h1Element.innerHTML = "This is so cool!";
+	}
+</script>
+</body>
+</html>

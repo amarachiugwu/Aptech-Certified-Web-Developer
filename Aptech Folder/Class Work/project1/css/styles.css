@@ -1,0 +1,378 @@
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+@font-face{
+	src: url(../fonts/roboto-regular.ttf);
+	font-family: roboto;
+}
+
+@font-face{
+	src: url(../fonts/khand-regular.ttf);
+	font-family: khand;
+}
+
+@font-face{
+	src: url(../fonts/pacifico-regular.ttf);
+	font-family: pacifico;
+}
+
+@font-face{
+	src: url(../fonts/tajawal-regular.ttf);
+	font-family: tajawal;
+}
+
+@font-face{
+	src: url(../fonts/boogaloo-regular.ttf);
+	font-family: boogaloo;
+}
+
+body{
+	width: 100%;
+	margin: 0;
+	font-family: roboto;
+	color: #76777b;
+}
+
+.top{
+	width: 100%;
+	height: 600px;
+	background-image: url(../images/banner1.jpg);
+	background-size: cover;
+}
+
+.top header{
+	width: 90%;
+	height: 70px;
+	padding: 30px 0;
+	margin: auto;
+}
+
+.top header .logo{
+	width: auto;
+	float: left;
+}
+
+.top header .logo a img{
+	width: 180px;
+}
+
+.top header nav{
+	width: auto;
+	float: right;
+}
+
+.top header nav ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.top header nav ul li{
+	float: left;
+}
+
+.top header nav ul li a{
+	display: block;	
+	border-radius: 4px;
+	padding: 7px 17px;
+	text-decoration: none;
+	color: #eee;
+	margin-right: 5px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+
+.top header nav ul li a:hover{
+	background-color: #eee;
+	color: #282923;
+}
+
+.top header nav ul li a.current{
+	border: 2px solid #eee;
+}
+
+.top .content{
+	width: 80%;
+	min-height: 200px;
+	margin: auto;
+	padding-top: 40px;
+}
+
+.top .content article{
+	width: 40%;
+	min-height: 200px;
+	float: left;
+	padding-top: 90px;
+}
+
+.top .content article h1{
+	font-size: 50px;
+	color: #eee;
+	margin: 0;
+	width: 400px;
+	line-height: 70px;
+}
+
+.top .content article p{
+	font-size: 18px;
+	color: #eee;
+	word-spacing: 10px;
+	line-height: 30px;
+	width: 400px;
+}
+
+.top .content aside{
+	float: right;
+	width: 40%;
+	min-height: 200px;
+	padding-top: 70px;
+	font-family: khand;
+}
+
+.top .content aside form{
+	background-color: #fff;
+	width: 90%;
+	min-height: 300px;
+	color: #eee;
+	padding: 15px 30px;
+}
+
+.top .content aside form h1{
+	font-size: 25px;
+	font-family: roboto;
+	color: #78797d;
+}
+
+.top .content aside form input{
+	width: 100%;
+	height: 45px;
+	border-radius: 4px;
+	border: none;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	font-size: 15px;
+	font-family: roboto;
+	background-color: #eee;
+}
+
+.top .content aside form input[type='submit']{
+	background-color: #eb2941;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #eee;
+}
+
+.container-fluid{
+	width: 100%;
+	min-height: 600px;
+	color: #76777b;
+}
+
+.container-fluid article{
+	width: 50%;
+	height: 600px;
+	background-image: url(../images/1.jpg);
+	background-size: cover;
+	float: left;
+}
+
+.container-fluid aside{
+	width: 50%;
+	height: 600px;
+	float: right;
+	padding: 15px 60px;
+}
+
+.container-fluid aside h1{
+	font-size: 35px;
+	margin-bottom: 35px;
+}
+
+.container-fluid aside p i.fa.fa-clock-o, i.fa.fa-users{
+	color: #6339f3;
+	font-size: 25px;
+}
+
+.container-fluid aside h2{
+	font-size: 20px;
+}
+
+.container-fluid aside hr{
+	color: #eee;
+}
+
+.container-fluid aside p{
+	font-size: 15px;
+	word-spacing: 10px;
+	line-height: 20px;
+}
+
+.outer-row{
+	width: 100%;
+	min-height: 500px;
+	background-color: #f8f9fb;
+	padding: 50px 0;
+}
+
+.outer-row .container{
+	width: 850px;
+	min-height: 1000px;
+	margin: auto;
+}
+
+.container .row1 .box{
+	float: left;
+	width: 50%;
+	height: 500px;
+	text-align: right;
+	padding: 0 30px 0 130px;
+	margin-bottom: 20px;
+}
+
+.container .row2 .box{
+	float: left;
+	width: 50%;
+	height: 500px;
+	padding: 0 130px 0 30px;
+}
+
+.container .row1 .box.bgimg{
+	background-image: url(../images/2.jpg);
+	background-size: cover;
+}
+
+.container .row2 .box.bgimg{
+	background-image: url(../images/3.jpg);
+	background-size: cover;
+}
+
+.container .row1 p{
+	word-spacing: 10px;
+	line-height: 20px;
+	margin-bottom: 55px;
+}
+
+.container .row1 h1{
+	.color: #eb2941; 
+	font-size: 30px;
+	border-bottom: 1px solid #eb2941;
+	padding-bottom: 10px;
+}
+
+.container .row1 span a{
+	display: inline-block;
+	padding: 7px 15px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: inherit;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 2px solid #eb2941;
+}
+
+.container .row2 p{
+	word-spacing: 10px;
+	line-height: 20px;
+	margin-bottom: 55px;
+}
+
+.container .row2 h1{
+	.color: #eb2941; 
+	font-size: 30px;
+	border-bottom: 1px solid #eb2941;
+	padding-bottom: 10px;
+}
+
+.container .row2 span a{
+	display: inline-block;
+	padding: 7px 15px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: inherit;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 2px solid #eb2941;
+}
+
+.purple{
+	width: 100%;
+	min-height: 350px;
+	background-color: #6339f3;
+}
+
+.purple .container{
+	width: 960px;
+	min-height: 100%;
+	margin: auto;
+	color: #eee;
+	padding: 70px 0 30px 0;
+}
+
+.purple .container h1{
+	text-align: center;
+}
+
+.purple .container .box{
+	width: 24%;
+	display: inline-block;
+	vertical-align: top;
+	min-height: 250px;
+	padding: 20px 30px;
+	text-align: center;
+}
+
+.purple .container .box hr{
+	color: #282923;
+}
+
+
+.fixedbg{
+	width: 100%;
+	background-image: url(../images/banner.jpg);
+	height: 400px;
+	padding: 60px 0;
+	text-align: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.fixedbg .container{
+	width: 800px;
+	margin: auto;
+	min-height: 400px;
+}
+
+.fixedbg .container h1{
+	color: #282923;
+}
+
+.fixedbg .container p{
+	word-spacing: 8px;
+	line-height: 20px;
+	margin-bottom: 40px;
+}
+
+.fixedbg .container span a{
+	display: inline-block;
+	padding: 7px 15px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: inherit;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 2px solid #eb2941;
+}
+
+.fixedbg .container span a:hover{
+	background-color: #eb2941;
+	color: #eee;
+}

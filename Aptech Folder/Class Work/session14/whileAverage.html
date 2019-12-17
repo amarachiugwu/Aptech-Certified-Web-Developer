@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Average of 5 Numbers Using While Loop</title>
+</head>
+<body>
+
+<h1>Average of 5 Numbers Using While Loop</h1>
+<script>
+	var i = 1;
+	var sum = 0;
+	while(i <= 5){
+		var num = parseFloat(prompt("Please enter number " + i));
+		sum = sum + num;
+		i++;
+	}
+	var ave = sum / 5;
+	alert("The average is " + ave);
+</script>
+</body>
+</html>

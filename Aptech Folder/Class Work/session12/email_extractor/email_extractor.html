@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email Extractor</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<section class="container">
+	<header>
+		<h1>Email Extractor App</h1>
+	</header>
+	<section class="main">
+		<article>
+			<h1>Email Extractor</h1>
+			<p>Email Extractor can help you to extract email addresses from a string. Just copy the string and paste in the space provided below then click on Extract Emails.</p>
+			<form>
+				<textarea id="txtEmails"></textarea>
+				<input type="submit" id="extractBtn" value="Extract Emails" onclick="extractEmails(event)">
+				<textarea id="result"></textarea>
+			</form>
+		</article>
+		<aside>
+			<p id="numEmails"></p>
+		</aside>
+	</section>
+</section>
+
+
+<script>
+	function extractEmails(e) {
+		e.preventDefault();
+		var txtEmails = document.getElementById('txtEmails');
+		var result = document.getElementById('result');
+		var numEmails = document.getElementById('numEmails');
+		var userString = txtEmails.value;
+		
+		var pattern = /[a-z0-9_.]+@[a-z0-9-]+\.[a-z.]{2,6}/ig;
+
+		var emails = userString.match(pattern);
+
+		result.style.display = "block";
+		result.value = emails;
+
+		numEmails.style.display = "block";
+		var countEmails = emails.length;
+
+		numEmails.innerHTML = countEmails + " email(s) extracted!";
+
+	}
+</script>
+</body>
+</html>

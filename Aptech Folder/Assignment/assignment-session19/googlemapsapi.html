@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Implementing Google Maps API</title>
+	<style>
+		body{
+			width: 100%;
+			margin: 0;
+			height: 100%;
+		}
+		#mymap{
+			width: 80%;
+			height: 400px;
+			margin: auto;
+			border: 1px solid #282923;
+		}
+	</style>
+</head>
+<body onload="initialize()"">
+<h1>Implementing Google Maps API</h1>
+<div id="mymap"></div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwJ2Vepe9L2Miuh7QH87SR_RItIXHlX6Q&libraries=places"></script>
+<script>
+	// var body = document.body;
+	var mapCanvas = document.getElementById('mymap');
+
+	// body.addEventListener('load', initialize);
+
+	function initialize() {
+		var num = new google.maps.LatLng(6.4467006, 7.508956499999999);
+
+		 var mapOptions ={
+		 	center: num,
+		 	zoom : 16,
+		 	mapTypeId : google.maps.MapTypeId.SATELITE
+		 	// SATELITE ROADMAP
+		 }
+		 var myMap = new google.maps.Map(mapCanvas, mapOptions);
+
+		 var marker = new google.maps.Marker({
+		 	position : num,
+		 	label : "Aptech Computer Education",
+		 	map : myMap
+
+		 })
+	}
+	
+</script>
+</body>
+</html>
+
+<!-- website: lat long.net
+calculate lat and long -->

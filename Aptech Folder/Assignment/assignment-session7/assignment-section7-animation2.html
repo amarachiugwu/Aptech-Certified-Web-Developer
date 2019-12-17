@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creating Slider With Animation</title>
+	<link rel="icon" type="image/png" href="images/ironistic.partners.png">
+	<style type="text/css">
+		div{
+			width: 1200px;
+			height: 544px;
+			margin: 0 auto;
+			border: 2px solid red;
+			animation-name: sliders;
+			animation-duration: 15s;
+			animation-play-state: running;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+			animation-delay: 0;
+			animation-direction: linear;
+			background-image: url(images/img/slider1.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+		}
+
+		@keyframes sliders{
+			0%{
+				background-image: url(images/img/slider1.jpg);
+			}
+
+			10%{
+				background-image: url(images/img/slider2.jpg);
+			}
+
+			20%{
+				background-image: url(images/img/slider3.jpg);
+			}
+
+			30%{
+				background-image: url(images/img/slider4.jpg);
+			}
+
+			40%{
+				background-image: url(images/img/slider5.jpg);
+			}
+
+			50%{
+				background-image: url(images/img/slider6.jpg);
+			}
+
+			60%{
+				background-image: url(images/img/slider7.jpg);
+			}
+
+			70%{
+				background-image: url(images/img/slider8.jpg);
+			}
+
+			80%{
+				background-image: url(images/img/slider4.jpg);
+			}
+
+			90%{
+				background-image: url(images/img/slider4.jpg);
+			}
+
+			100%{
+				background-image: url(images/img/slider1.jpg);
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+	<div id="inner-div" style="position: absolute; background-image: url(images/img/img1.jpg, images/img/img2.jpg, images/img/img3.jpg); border: 2px solid red; width: 1000px; height: 500px; margin:0 auto;">
+	</div>	
+	</div
+</body>
+</html>

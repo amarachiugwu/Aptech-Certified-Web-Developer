@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DecantKids</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="kids.css">
+</head>
+<body>
+<div class="slider">
+<div class="header">
+	<div class="head">
+	<div class="logo">
+		<h2>DecantTech</h2>
+	</div>
+	<ul>
+		<a href="canvas.html"><li>HOME</li></a>
+		<a href="#"><li>ABOUT</li></a>
+		<a href="#"><li>PRODUCTS</li></a>
+		<a href="#"><li>SERVICES</li></a>
+		<a href="#"><li>CONTACT</li></a>
+	</ul>
+	</div>
+</div>
+<canvas id="myCanvas" width="1200" height="500" style="border: 2px solid transparent;"></canvas>
+</div>
+
+<div class="softwares">
+<h2>CLICK TO DOWLOAD</h2>
+	<div class="images">
+		<div class="image">
+			<a href="#"><img src="soft1.jpg"></a>
+		</div>
+		<div class="image">
+			<a href="#"><img src="soft2.jpg"></a>
+		</div>
+		<div class="image">
+			<a href="#"><img src="soft3.jpg"></a>
+		</div>
+		<div class="image">
+			<a href="#"><img src="soft4.jpg"></a>
+		</div>
+		<div class="image">
+			<a href="#"><img src="soft5.jpg"></a>
+		</div>
+		<div class="image">
+			<a href="#"><img src="soft6.jpg"></a>
+		</div>
+		<div class="image">
+			<a href="#"><img src="soft7.jpg"></a>
+		</div>
+		<div class="image">
+			<a href="#"><img src="soft8.jpg"></a>
+		</div>
+	</div>
+	<div class="info">
+		<p>You can download your softwares from the boxes that specifies your age.</p>
+	</div>
+</div>
+
+<footer>
+		<p>Copyright Reserved &copy; DecantTECH</p>
+	</footer>
+</body>
+<script type="text/javascript">
+window.onload = function(){
+		var canvas = document.getElementById('myCanvas');
+		var ctext = canvas.getContext('2d');
+
+		// Drawing Circles
+	ctext.beginPath();
+	ctext.fillStyle = "orange";
+	ctext.strokeStyle = "orange";
+	ctext.lineWidth = 3;
+	ctext.arc(360, 150, 130, 0, 2 * Math.PI, false);
+	ctext.stroke();
+	ctext.fill();
+	ctext.closePath();
+	ctext.beginPath();
+	ctext.font = '30px tahoma';
+	ctext.fillStyle = 'red';
+	ctext.fillText  ('Ages from 2 - 6 years', 250, 100);
+	ctext.closePath();
+
+
+
+	ctext.beginPath();
+	ctext.fillStyle = "yellow";
+	ctext.strokeStyle = "yellow";
+	ctext.lineWidth = 3;
+	ctext.arc(130, 350, 130, 0, 2 * Math.PI, false);
+	ctext.stroke();
+	ctext.fill();
+	ctext.closePath();
+
+	ctext.beginPath();
+	ctext.fillStyle = "green";
+	ctext.strokeStyle = "green";
+	ctext.lineWidth = 3;
+	ctext.arc(600, 350, 130, 0, 2 * Math.PI, false);
+	ctext.stroke();
+	ctext.fill();
+	ctext.closePath();
+
+	ctext.beginPath();
+	ctext.fillStyle = "blue";
+	ctext.strokeStyle = "blue";
+	ctext.lineWidth = 3;
+	ctext.arc(1060, 350, 130, 0, 2 * Math.PI, false);
+	ctext.stroke();
+	ctext.fill();
+	ctext.closePath();
+
+
+
+	ctext.beginPath();
+	ctext.fillStyle = "red";
+	ctext.strokeStyle = "red";
+	ctext.lineWidth = 3;
+	ctext.arc(830, 150, 130, 0, 2 * Math.PI, false);
+	ctext.stroke();
+	ctext.fill();
+	ctext.closePath();
+
+
+// var canvas = document.getElementById("myCanvas");
+// var ctx = canvas.getContext("2d");
+// ctx.font = "30px Comic Sans MS";
+// ctx.fillStyle = "red";
+// ctx.textAlign = "center";
+// ctx.fillText("Hello World", canvas.width/2, canvas.height/2);
+
+
+}
+
+
+</script>
+</html>

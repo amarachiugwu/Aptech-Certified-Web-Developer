@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Methods for Selecting Elements in the DOM</title>
+</head>
+<style type="text/css">
+	.increasefontSize{
+		font-size: 50px;
+	}
+</style>
+<body>
+<h1>Methods for Selecting Elements in the DOM</h1>
+<hr>
+<h2 id="first">Using document.getElementById()</h2>
+<hr>
+<h3>Using document.getElementsByTagName()</h3>
+<h3>Using document.getElementsByTagName()</h3>
+<h3>Using document.getElementsByTagName()</h3>
+<h3>Using document.getElementsByTagName()</h3>
+<hr>
+<h4 class="second">Using document.getElementsByClassName()</h4>
+<h4 class="second">Using document.getElementsByClassName()</h4>
+<h4 class="second">Using document.getElementsByClassName()</h4>
+<h4 class="second">Using document.getElementsByClassName()</h4>
+<hr>
+<h5 class="third">Using document.querySelector()</h5>
+<hr>
+<h6 class="fourth">Using document.querySelectorAll()</h6>
+<h6 class="fourth">Using document.querySelectorAll()</h6>
+<h6 class="fourth">Using document.querySelectorAll()</h6>
+<hr>
+<button onclick="byId()">Get Element by ID</button>
+<button onclick="byTagName()">Get Element by TagName</button>
+<button onclick="byClassName()">Get Element by ClassName</button>
+<button onclick="byQuerySelector()">Get Element by QuerySelector</button>
+<button onclick="byQuerySelectorAll()">Get Element by QuerySelectorAll</button>
+
+<script type="text/javascript">
+	function byId() {
+		var element = document.getElementById('first');
+		element.style.backgroundColor = 'purple';
+		element.innerHTML = 'Element selected Using document.getElementById()';
+		element.setAttribute('class', 'increasefontSize');
+	}
+	function byTagName() {
+		var element = document.getElementsByTagName('h3');
+		for (var i = 0; i < element.length; i++) {
+			element[i].style.backgroundColor = 'orange';
+		}
+	}
+	function byClassName() {
+		var element = document.getElementsByClassName('second');
+		for (var i = 0; i < element.length; i++) {
+			element[i].style.backgroundColor = 'green';
+		}
+	}
+	function byQuerySelector() {
+		var element = document.querySelector('.third');
+		element.style.backgroundColor = 'pink';
+	}
+	function byQuerySelectorAll() {
+		var element = document.querySelectorAll('.fourth');
+		for (var i = 0; i < element.length; i++) {
+			element[i].style.backgroundColor = 'yellow';
+		}
+	}
+</script>
+</body>
+
+</html>

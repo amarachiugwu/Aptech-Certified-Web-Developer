@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Window Object</title>
+	<script type="text/javascript">
+		function new_window(){
+			if(confirm('Do you want to open a new page?')){
+				window.open('newPage.html')
+			}else{
+				window.alert('In the Current window')
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="click to move to the next page" onclick="new_window();">
+</body>
+</html>

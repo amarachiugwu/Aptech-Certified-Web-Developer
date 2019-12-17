@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parse By Refrence</title>
+</head>
+<body>
+<h1>Parse By Refrence</h1>
+
+<script type="text/javascript">
+	
+	var names = ['James', 'Ruth', 'Brad'];
+	function change_names(nameArray) {
+		nameArray[0] = 'stuart';
+	}
+	function displayNames(nameArray) {
+		document.write('<ul>');
+		for (var i = 0; i < nameArray.length; i++) {
+			document.write('<li>' + nameArray[i] + '</li>');
+		}
+		document.write('</ul>');
+	}
+	document.write('<h1> Original names in array');
+	displayNames(names);
+	change_names(names);
+	document.write('<h1> Current names in array');
+	displayNames(names);
+</script>
+</body>
+</html>

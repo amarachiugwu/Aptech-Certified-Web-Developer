@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Simple Quiz App</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<p id="btn">Start Quiz!</p>
+
+<script type="text/javascript">
+	var btn = document.getElementById('btn');
+
+	btn.addEventListener('click', startQuiz);
+
+	
+function startQuiz() {
+	const quiz = [["Who invented Moutre D' Avion", "wright brothers"], ["Which Bird has its Latin name as PIEBALD?", "bald eagle"], ["How many countries make up the United Kingdom", "4"], ["What is the full meaning of INEC?", "independent national electoral commission"], ["Who is the President of Nigeria", "buhari"], ["What is the chemical formular of water?", "h20"]];
+	var score = 0;
+	for (var i = 0; i < quiz.length; i++) {
+		var question = quiz[i][0];
+		var answer = quiz[i][1];
+		var response = ask_question(question);
+		check_answer(response, answer);
+	}
+
+	end_of_quiz(score);
+
+
+	function ask_question(qtn) {
+		var user_resp = prompt(qtn);
+		user_resp = user_resp.toLowerCase();
+		return user_resp;
+	}
+
+
+	function check_answer(user_resp, correct_ans) {
+		if (user_resp === correct_ans) {
+			alert("Correct!");
+			score++;
+		} else {
+			alert("Incorrect! Correct answer was " + correct_ans);
+		}
+	}
+
+	function end_of_quiz(score) {
+		alert("Thank you for taking our quiz\nYou scored " + score + " points");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+	// function startQuiz() {
+		
+		
+
+	// 	for (var i = 0; i < quiz.length; i++) {
+	// 		var question = quiz[i][0];
+	// 		var answer = quiz[i][1];
+
+	// 		var response = prompt(question);
+	// 		response = response.toLowerCase();
+
+	// 		if (response == answer) {
+	// 			alert("Correct!");
+	// 			score++;
+	// 		} else {
+	// 			alert("Incorrect answer!\nAnswer is " + answer);
+	// 		}
+	// 	}
+
+	// 	alert(`Thank you for taking our Quiz!\nYou scored ${score} point(s)`);
+
+	// }
+</script>
+</body>
+</html>

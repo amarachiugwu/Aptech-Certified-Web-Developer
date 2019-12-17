@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Direct method of Creating custom Object</title>
+</head>
+<body>
+
+<h1>Direct method of Creating custom Object</h1>
+
+<script type="text/javascript">
+	var student = new Object();
+
+	student.name = 'Onyinye';
+	student.matric = 'Student1014564';
+	student.course = 'Web Design';
+
+	// alert('student\'s name is' + student.name);
+
+	student.displayDetails = function () {
+		alert('students details are:\nName: ' + this.name + '\nMatric: ' + this.matric + '\nCourse: ' + this.course);
+	}
+	student.displayDetails();
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Newsletter</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<section class="container">
+	<h1>Susbcribe to Out Newsletter</h1>
+	<section class="box1">
+		<form>
+			<h2>By suscribing to Our Newsletter you will always get latest updates from us</h2>
+			<label for="name">Name:</label>
+			<input type="text" onfocus="changeColor(this)" onblur="hideColor(this)" name="" id="myname" placeholder="*Enter Name" id="myname" ><br>
+			<label for="mail">Email:</label>
+			<input type="email" onfocus="changeColor(this)" onblur="hideColor(this)" name="" placeholder="*Enter Email:" id="mail"  ><br>
+			
+			<label for="comment">Country:</label>
+			<select id="country" onchange="showState()" onfocus="changeColor(this)" onblur="hideColor(this)">
+				<option value="london"></option>
+				<option value="Nigeria">Nigeria</option>
+				<option value="Canada">Canada</option>
+				<option value="Italy">Italy</option>
+				<option value="Germany">Germany</option>
+			</select><br>
+			
+			<section id="stateCont">
+				<label for="state" id="sat">State:</label>
+				<select id="state" onfocus="changeColor(this)" onblur="hideColor(this)">
+				<option value="Kano"></option>
+				<option value="Abuja">Abuja</option>
+				<option value="Lagos">Lagos</option>
+				<option value="Anambra">Anambra</option>
+				<option value="Enugu">Enugu</option>
+			</select><br>
+			</section>
+			<label for="phone">Tel:</label>
+			<input type="tel"  onblur="hideColor(this)" name="" placeholder="Enter Phone No:" id="phone" onfocus="myInput()"  ><br>
+			<label for="comment" id="msg">Comment:</label>
+			<textarea id="message" onfocus="clearTxt()" onblur="hideColor(this)"></textarea ><br>
+			<input type="submit">
+			<!-- onfocus="contribution() -->
+		</form>
+	</section>
+	</section>
+	<script src="newsletter.js"></script>
+</body>
+</html>

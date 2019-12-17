@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Working with the date Object</title>
+</head>
+<body>
+<h1>Working with the date Object</h1>
+
+<script type="text/javascript">
+	var today = new Date();
+	var dayOfWeek = today.getDay();
+	var date = today.getDate();
+	var month = today.getMonth();
+	var year = today.getFullYear();
+	var days = ['sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satuday'];
+	var months = ['Jenuary', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+	alert('Todays date is \n ' + days[dayOfWeek] + ', ' + months[month] + ' ' + date + ', ' + year);
+</script>
+</body>
+</html>

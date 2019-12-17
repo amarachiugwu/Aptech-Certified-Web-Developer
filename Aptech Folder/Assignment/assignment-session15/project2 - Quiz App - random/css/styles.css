@@ -1,0 +1,19 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	margin: 0;
+}
+p#btn{
+	width: 200px;
+	background-color: maroon;
+	text-transform: uppercase;
+	margin: 20% auto;
+	text-align: center;
+	padding: 20px;
+	height: 60px;
+	color: #eee;
+	cursor: pointer;
+	font-size: 20px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<p id="btn">Start Quiz!</p>
+
+<script type="text/javascript">
+//hear i want to write a code that asks questions at random from an array of lenght 10 ie i have 10 consecutive questions to ask my user when the user click the button at the center of my page
+
+	var btn = document.getElementById('btn');
+	var random;
+	var check = 10;
+	var num;
+	var array = new Array();
+	var score = 0;
+
+	btn.addEventListener('click', statQuiz);
+	function statQuiz() {
+		myQuestion();
+	}
+	var quiz = [["What is the capital city of Italy?","Rome"], ["The atmosphere is held to the earth by what?", "gravity"], ["Which type of fish covers the sea for miles together, and it is a wonderful sight to see?","jelly fish"], ["'you can't connect the dots looking forward, you can only connect them looking backwards'\nthis is a famous quote of?'","steve jobs"], ["Where is the largest palace in the world", "vatican palace"], ["Who abolished slavery in America?","abraham lincoln"], ['name the "unsinkable ship" that sank on its madian voyage','titanic'], ['Name the word that connects "cooking" "atmosphere" and "blood" ?', 'pressure'], ['the artery that pumps blood from the heart to all other parts of the body is called?', 'arota'], ['Which country has the same flag as USA?', 'liberia']];
+	
+	function myQuestion(question){
+		
+		 for (var j = 0; j <= check; j++) {
+			random = Math.floor(Math.random() * 10);
+	    	num =  array.indexOf(random);
+			     if (num == -1) {
+			     	 alert("Question number " + (random + 1));
+			         array.push(random);
+			         var questions = quiz[random][0];
+			     }
+			   else{
+		   	    	 // alert("You have answered this question click ok for the next question");
+		   	    	 check++;
+		   	   }
+		    myAnswer();
+        }
+
+	}
+		function myAnswer(question){
+			if(num == -1){
+				 var answer = quiz[random][1];
+				 var response = prompt(quiz[random][0]);
+				 response = response.toLowerCase();
+
+				if(response == answer){
+					alert('Correct!');
+					score = score + 1;
+				}
+				else{
+					alert('Incorrect answer\nThe right answer is ' + answer);
+				}
+		                     
+		   	   	if(array.length == 10){
+		   	   		check = -1;
+		   	   		var percent = score * 10; 
+					alert(`Thank you for taking our General Knowledge Quiz!\nYou attempted all 10 questions and scored ${percent}% of 100 `);
+					if (percent > 69){
+						alert("you got an 'A' Grade.\nBravo!!! you Nailed it.");
+					}
+					else if (percent > 59){
+						alert("you got an 'B' Grade.\nNice work");
+					}
+					else if (percent > 49){
+						alert("you got an 'C' Grade.\nyou tried, Average");
+					}
+					else if (percent > 39){
+						alert("you got an 'D' Grade.\nYou just need a little studying");
+					}
+					else if (percent > 29){
+						alert("you got an 'E' Grade.\nOuch You need to keep studying");
+					}
+					else if (percent > 19){
+						alert("you got an 'F' Grade.\nOuch You need to improve your General Knowledge, I recommend my Quiz site for you(www.marycynthiamaraquiz.com).");
+					}
+		   	   	else{
+		   	   		alert("Very very Poor.\nThis Quiz is not yet for you, you realy need alot of studies to attempT this quiz again");
+		   	   	}
+		   	   	}
+		   	 
+   	       }
+	
+	}
+					
+	
+</script>
+</body>
+</html>

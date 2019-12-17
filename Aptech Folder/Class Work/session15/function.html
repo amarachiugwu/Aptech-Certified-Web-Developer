@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function in JS</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	// window.onload = add; you can call a function like this
+	function add() {
+		var num1 = parseInt(prompt('enter first number for add function'));
+		var num2 = parseInt(prompt('enter the second number for add function'));
+		var result = num1 + num2;
+		alert('Result of addition ' + result);
+	}
+
+	add(); // you can also call a function this way
+
+	// parameters
+	//the add2 function is called hear (that is onload of the page), the num3 parameter represent num1 in the function and num4 represent num2 in the main function.
+	//You can basically have anything as your parameters
+	window.onload = add2;
+	var num3 = parseInt(prompt('enter first number for add2 function'));
+	var num4 = parseInt(prompt('enter the second number add2 function'));
+	function add2( num1, num2) {
+		
+		var result = num3 + num4;
+		alert('Result of addition add2 ' + result);
+	}
+</script>
+</body>
+</html>

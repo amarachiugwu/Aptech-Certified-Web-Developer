@@ -1,0 +1,209 @@
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+.slider{
+	width: 100%;
+	min-height: 700px;
+	background-image: url(product_hero.jpg);
+	background-repeat: no-repeat;
+}
+
+.slider .header{
+	width: 100%;
+	height: 100px;
+	background-color: transparent;
+	margin: 0;
+	padding-top: 20px;
+}
+.slider .header .head{
+	width: 75%;
+	height: 50px;
+	background-color: transparent;
+	margin: auto;
+}
+.slider .header .logo{
+	width: 180px;
+	height: 50px;
+	padding-top: -2px;
+	background-color: transparent;
+}
+.slider .header .logo h2{
+	margin: 0;
+	font-family: forte;
+	margin-top: 5px;
+	text-align: center;
+	color: skyblue;
+	font-size: 35px; 
+}
+.slider .header .head ul{
+	list-style-type: none;
+	margin-top: -35px;
+	margin-right: 200px;
+	float: right;
+}
+.slider .header .head ul li{
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 15px;
+	color: white;
+	font-family: verdana;
+}
+.slider .header .head ul li a{
+	margin-top: 10px;
+
+}
+.slider h1{
+	text-align: center;
+	font-family: arial;
+	font-size: 100px;
+	color: #1ED7D1;
+	margin-top: 15%;
+}
+.slider .container{
+	width: 650px;
+	height: 150px;
+	margin: -2% auto;
+	padding-top: 15px;
+	background-color: transparent;
+}
+.slider .container p{
+	text-align: center;
+	font-weight: bold;
+	margin: 0;
+	font-size: 20px;
+	color: white;
+}
+.main{
+	width: 100%;
+	min-height: 600px;
+	background-color: white;
+	margin: 0;
+	padding-right: 20px;
+}
+.main h1{
+	margin: 0;
+	text-align: center;
+	color: #1ED7D1;
+	font-size: 60px;
+}
+.main ul#category{
+	margin-top: 15px;
+	margin-left: 20%;
+	list-style-type: none;
+	margin-bottom: 5%;
+}
+.main ul#category li{
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 15px;
+	color: #1ED7D1;
+	font-family: verdana;
+}
+
+.main ul#category li:hover{
+	border-bottom: 2px solid #1ED7D1;
+}
+.main .info{
+	width: 500px;
+	height: 400px;
+	background-color: white;
+	padding-top: 15px;
+	margin-left: 5%;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+.main .info h3{
+	font-size: 35px;
+	color: #1ED7D1;
+}
+.main .info p{
+	font-size: 18px;
+	font-weight: bold;
+}
+.main  ul#soft{
+	margin-top: 15px;
+	float: right;
+	background-color: white;
+	width: 55%;
+	margin-top: -29%;
+}
+
+.main ul#soft li{
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 15px;
+	color: white;
+	font-family: verdana;
+	vertical-align: top;
+}
+.main ul#soft li img{
+	width: 120px;
+	height: 150px;
+}
+
+.account{
+	width: 100%;
+	min-height: 280px;
+	background-image: url(product_hero.jpg);
+	background-repeat: no-repeat;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 0;
+}
+
+.account h1{
+	text-align: center;
+	margin: 0;
+	color: #1ED7D1;
+}
+
+.account form{
+	margin: 10px auto;
+	background-color: rgba(16,18,17, 0.5);
+	width: 500px;
+	min-height: 150px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	margin-bottom: 0;
+}
+.account form input{
+	display: block;
+	width: 350px;
+	height: 50px;
+	margin: 15px 10px;
+	padding: 10px 10px;
+	border: 1px solid #1ED7D1;
+	border-radius: 5px;
+}
+.account form input#button{
+	width: 100px;
+	background-color:  #1ED7D1;
+	color: white;
+	border: 1px solid white;
+	margin-left: 25px;
+}
+
+.account form input#button:hover{
+	background-color: white;
+	color: #1ED7D1;
+	border: 1px solid #1ED7D1;
+}
+footer{
+	background-color: black;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	color: #ccc;
+	font-weight: bold;
+	padding-top: 20px;
+	margin-top: -20px;
+}
+footer p{
+	margin: 0;
+}

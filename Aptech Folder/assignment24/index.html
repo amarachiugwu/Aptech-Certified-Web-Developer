@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<!-- Create a user registration form that will allow user to upload a picture using drag and drop. -->
+
+<div class="container">
+	<header>
+		<h1>Register With Us</h1>
+	</header>
+
+	<div class="main">
+		<div class="aside">
+			<div class="image">
+			</div>
+			<a class="text" href=""><input type="file" id="btn">Click to drag and drop image here</a>
+			<input type="file" id="change">
+		</div>
+
+		<form>
+			<p>Full Name: </p>
+			<input onfocus="showStyle(this)" onblur="hideStyle(this)" type="text">
+			<br>
+			<p>Email Address: </p>
+			<input onfocus="showStyle(this)" onblur="hideStyle(this)" type="email">
+			<br>
+			<p>Phone Number: </p>
+			<input onfocus="showStyle(this)" onblur="hideStyle(this)" type="text" pattern="^[0-9]{2,}$">
+			<br>
+			<p>Date of Birth: </p>
+			<input onfocus="showStyle(this)" onblur="hideStyle(this)" type="date">
+			<br>
+			<p>State: </p>
+			<input onfocus="showStyle(this)" onblur="hideStyle(this)" type="text">
+			<button>Register</button>
+		</form>
+	</div>
+</div>
+
+<script src="custom.js"></script>
+</body>
+</html>

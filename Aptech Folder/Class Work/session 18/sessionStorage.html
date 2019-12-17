@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Session Storage</title>
+</head>
+<body>
+<h1>Working with HTML5 Session Storage</h1>
+<button id="btn1">Add Entry</button>
+<button id="btn2">Retrieve Entry</button>
+
+<script type="text/javascript">
+	var btn1 = document.getElementById('btn1');
+	var btn2 = document.getElementById('btn2');
+
+	// Add Event Listeners
+	btn1.addEventListener("click", addEntry);
+	btn2.addEventListener("click", retrieveEntry);
+
+	// Define Event Handler
+	function addEntry() {
+		var name = prompt('Please enter your name');
+		if (window['sessionStorage']) {
+			sessionStorage.setItem('name', name);
+			alert('New entry stored succesfully');
+		}else{
+			alert('Sorry your browser does not support web storage');
+		}
+	}
+
+	function retrieveEntry() {
+		if (window['sessionStorage']) {
+			if (sessionStorage.getItem('name')) {
+				alert("entry in web storage is " + sessionStorage.getItem('name'));
+			}else{
+				alert('no entry in your web storage');
+			}
+		}else{
+			alert('Sorry your browser does not support web storage');
+		}
+	}
+</script>
+</body>
+</html>
