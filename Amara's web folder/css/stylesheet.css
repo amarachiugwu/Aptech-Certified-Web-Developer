@@ -1,0 +1,67 @@
+	div.header {
+		color:black;
+	 	background-color: #ffb3cc;
+	 	text-align: center;
+	 	padding: 5px;
+	}
+
+	div#container {
+		background-color: #ffe6ee;
+		width:800px;
+    float:left;
+    padding:15px;
+	}
+
+	div#nav{
+		line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:10px;
+    
+    } 
+	li a {
+		text-decoration: none;
+		list-style: none;
+	}
+	
+	/*#London {
+		 width:400px;
+    float:left;
+    padding:10px; 
+	}
+	#Paris {
+		 width:400px;
+    float:left;
+    padding:10px; 
+	}
+	#Tokyo {
+		 width:400px;
+    float:left;
+    padding:10px; 
+	}*/
+	div#section{
+		background-color:#eeeeee,
+		width:200px; 
+		float: right;
+		padding: 10px;
+		margin-right: 10px;
+		margin-left: 10px
+	}
+	aside{
+		background-color:#eeeeee;
+		display: inline-block;
+		color:hotpink;
+		
+	}
+	div.footer{
+		display: inline-table;
+		color:black;
+	 	background-color: #ffb3cc;
+	 	text-align: center;
+	 	padding: 5px;
+	
+	}
+
+

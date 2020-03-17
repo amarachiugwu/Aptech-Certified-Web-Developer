@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Testing</title>
+</head>
+<body>
+<p id="object"></p>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<button onclick="displayDate()">The time is?</button>
+<script>
+	var person = {
+		firstName:"Marycynthia", lastName:"Mara", age:18, eyeColor:"black iris and 'brown iris' "
+	};
+	document.getElementById("object").innerHTML=
+	 person.firstName + " " + person.lastName + " is " + person.age + " years old " + " with a " +person.eyeColor + " eyeColor.";
+</script>
+
+<script>
+var person = {
+		firstName:"Marycynthia", lastName:"Mara", age:18, eyeColor:"black"
+		fullName: function(){
+			return this.firstName + " " + this.lastName  + " " + this.age + " " + this.eyeColor;
+		}
+	};
+	document.getElementById("demo").innerHTML = person.fullName();
+</script>
+
+<script>
+var person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function() {
+       return this.firstName + " " + this.lastName;
+    }
+};
+
+document.getElementById("demo2").innerHTML = person.fullName();
+</script>
+<script>
+	function displayDate() {
+		document.getElementById("demo3").innerHTML=Date();
+	}
+</script>
+<p class="demo4"></p>	
+<script>
+	var txt ="iamahumblegirl";
+	// var sln ="txt.lenght";
+	document.getElementById("demo4").innerHTML = txt.lenght;
+</script>
+<p id="demo5"></p>
+
+<script>
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo5").innerHTML = txt.length;
+</script>
+</body>
+</html>

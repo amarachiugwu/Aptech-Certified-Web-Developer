@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Testing</title>
+</head>
+<body>
+<h1>Js Testing</h1>
+<button onclick="document.write(5+1)">Click Me</button>
+<p>This is my first paragraph</p>
+<p id="demo"></p>
+<p id="numb"></p>
+<p id="name"></p>
+<p id="numbers"></p>
+<p id="number"></p>
+<p id="object"></p>
+<script>
+	window.alert(200 + 50)
+</script>
+<script>
+	document.getElementById('demo').innerHTML= 'This paragraph is written using Javascript';
+	//document.write(50 + 5); //last value in the browser
+</script>
+<script>
+	console.log(5 + 6)
+</script>
+<script>
+	var name = "Marycynthia" + " " + "Mara"
+	document.getElementById('name').innerHTML = name;
+</script>
+<script>
+	//when you enclose a number in quotes the browser treates it like a string
+	var numbers = "200" + 30 + 3;
+	document.getElementById('numbers').innerHTML =numbers;
+</script>
+<script>
+	var number = 200 + 30 * 3;
+	document.getElementById('number').innerHTML =number;
+</script>
+<script>
+	var numb = (200 + 30) * 3;
+	document.getElementById('numb').innerHTML =numb;
+</script>
+<script>
+	var x = 10;
+	x += 5;
+</script>
+<script>
+	typeof [1,2,3,4]
+</script>
+
+</body>
+</html>

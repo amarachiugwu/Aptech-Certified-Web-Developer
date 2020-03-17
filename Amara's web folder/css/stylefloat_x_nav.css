@@ -1,0 +1,38 @@
+body{
+	background-color: lightblue;
+	color: black;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	overflow: hidden;
+	
+}
+
+li{
+	float: left;
+}
+
+li a{
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+	color: white;
+	text-align: center;
+
+}
+a:hover:not(.active){
+	background-color: #555;
+}
+.active{
+	background-color: #006666;
+	float: right;
+}
+
+@media screen and (max-width: 600px){
+	li{float: none;}
+	.active{float: none;}
+
+}

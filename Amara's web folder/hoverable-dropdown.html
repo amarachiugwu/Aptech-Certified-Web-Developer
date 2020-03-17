@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hoverable Dropdown</title>
+	<style type="text/css">
+		.dropdown{
+			position: relative;
+			display: inline-block;
+		}
+		.dropdown-content{
+			display: none;
+			padding: 10px;
+			background-color: #eee;
+			box-shadow: 0px 16px 0px 8px  rgba(0,0,0,0.2);
+			border-radius: 10px;
+		}
+		.dropdown:hover .dropdown-content{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h2>Hover over the button to see the message we have for you</h2>
+<div class="dropdown">
+	<button>click me</button>
+	<div class="dropdown-content">
+		<p>Hello World!</p>
+	</div>
+</div>
+</body>
+</html>
